@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className=" w-full bg-white shadow-md h-14 flex sm:justify-between xs:justify-between flex-row sticky top-0 z-50 ">
-      <div class="flex w-24 h-14 justify-start items-center">
+      <div className="flex w-24 h-14 justify-start items-center">
         <Image
           src={logo}
           alt="navbar logo image"
@@ -19,21 +19,21 @@ export default function Navbar() {
           placeholder="blur"
         />
       </div>
-      <div class="flex w-full justify-center items-end sm:hidden xs:hidden md:flex">
-        <div class="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
+      <div className="flex w-full justify-center items-end sm:hidden xs:hidden md:flex">
+        <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
           Home
         </div>
-        <div class="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
+        <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
           Portfolio
         </div>
-        <div class="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
+        <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
           Contact
         </div>
-        <div class="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
+        <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
           About
         </div>
       </div>
-      <div class="flex w-20 h-14  justify-center items-center cursor-pointer transition-all duration-500">
+      <div className="flex w-20 h-14  justify-center items-center cursor-pointer transition-all duration-500">
         {darkMode ? (
           <CiDark
             size="1.5rem"
