@@ -9,8 +9,15 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className=" w-full bg-white shadow-md h-14 flex sm:justify-between xs:justify-between flex-row sticky top-0 z-50 ">
-      <div class="flex w-24 h-14 justify-start items-center relative">
-      <Image className="absolute" src={logo} alt="navbar logo image" width={80} height={200}/>
+      <div class="flex w-24 h-14 justify-start items-center">
+        <Image
+          src={logo}
+          alt="navbar logo image"
+          width={80}
+          height={200}
+          priority
+          placeholder="blur"
+        />
       </div>
       <div class="flex w-full justify-center items-end sm:hidden xs:hidden md:flex">
         <div class="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
@@ -43,7 +50,7 @@ export default function Navbar() {
           />
         )}
         <div className="md:hidden lg:hidden xs:flex sm:flex justify-center items-center cursor-pointer ">
-          <Hamburger toggled={isOpen} toggle={setOpen} size={20}/>
+          <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
         </div>
       </div>
     </div>
