@@ -30,7 +30,7 @@ export default function Navbar() {
           Contact
         </div>
         <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-500 text-sm">
-          About
+          About Us
         </div>
       </div>
       <div className="flex w-20 h-14  justify-center items-center cursor-pointer transition-all duration-500">
