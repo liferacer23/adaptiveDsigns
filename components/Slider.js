@@ -10,6 +10,7 @@ export default function Slider() {
     <div className="flex md:flex-row xs:flex-col gap-10 items-start justify-between md:pl-11 h-[100vh]">
       <div className="md:w-[30%] xs:w-[100%] sm:w-[100%] flex flex-col justify-start items-center">
         <h1 className="">Adaptive Designs</h1>
+        <p> Best interior design company in ethiopia</p>
       </div>
       <div className="md:w-[65%] xs:w-[100%] sm:w-[100%]">
         <Carousel autoplay>
