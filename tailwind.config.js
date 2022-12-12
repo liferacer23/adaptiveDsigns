@@ -25,7 +25,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-
+      colors: {
+        'primary': '#072226',
+      },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
       },
