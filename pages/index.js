@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Slider from "../components/Slider";
 import HeaderComponent from "../components/HeaderComponent";
+import Services from "../components/Services";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="flex flex-col">
       <HeaderComponent />
       <Slider />
+      <Services/>
       </div>
     </>
   );
