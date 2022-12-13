@@ -5,7 +5,7 @@ export default function HeaderComponent() {
   return (
     <div className="h-36 w-full flex items-end text-5xl px-8 pb-2 relative">
       <div className="flex justify-between  2xl:gap-10 items-end md:w-[80%] lg:w-[90%] 2xl:w-[95%] relative">
-        <span className="lg:text-[45px] font-bold xs:text-[30px] sm:text-[30px] sm:text-center xs:text-center"> ADAPT ELEVATE DELIVER</span>
+        <span className="lg:text-[45px] font-bold xs:text-[30px] sm:text-[30px] sm:text-left xs:text-left"> ADAPT ELEVATE DELIVER</span>
        <div className="md:w-[30%] md:h-[30%] xs:h-[90%] sm:h-[90%]  xs:w-[100%] sm:w-[100%]" > <Image src={dots} alt="dots image" priority /></div>
         <span className="w-26 rounded-full shadow-xl absolute -bottom-8 right-10 h-12 bg-white px-5 lg:py-3 xs:py-4 sm:py-4 lg:text-[30px] font-bold xs:text-[15px] sm:text-[15px] text-center z-30">
           CONTACT US
