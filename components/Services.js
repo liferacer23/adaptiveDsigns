@@ -10,7 +10,7 @@ export default function Services() {
           <span className="font-bold text-md">WHAT WE DO</span>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center w-full gap-2">
+      <div className="flex flex-wrap items-center lg:justify-center xl:justify-around  w-full gap-2">
         <div className="flex flex-col items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፩</span>
           <span className="text-md font-bold mt-4">ARCHITECTURE</span>

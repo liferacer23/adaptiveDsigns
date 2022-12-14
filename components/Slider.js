@@ -12,7 +12,7 @@ export default function Slider() {
 
   return (
     <div className="flex h-full">
-      <div className=" bg-red-300 w-full relative">
+      <div className=" w-full relative">
         <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7">
           <Button
           style={{border:"none"}}
@@ -42,16 +42,16 @@ export default function Slider() {
       </div>
         <Carousel autoplay ref={carouselRef}>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] bg-white relative">
-            <Image priority src={image1} alt="image1" object-fit="cover" fill />
+            <Image  src={image1} alt="image1" objectFit="cover" fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw]   relative ">
-            <Image priority src={image2} alt="image2" object-fit="cover" fill />
+            <Image  src={image2} alt="image2" objectFit="cover" fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]   relative ">
-            <Image priority src={image3} alt="image3" object-fit="cover" fill />
+            <Image  src={image3} alt="image3" objectFit="cover" fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]  relative ">
-            <Image priority src={image4} alt="image4" object-fit="cover" fill />
+            <Image  src={image4} alt="image4" objectFit="cover" fill />
           </div>
         </Carousel>
       </div>

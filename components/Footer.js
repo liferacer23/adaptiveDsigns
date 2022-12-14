@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col items-center justify-center py-10 h-full bg-secondary w-full mt-20 gap-3 relative">
       <div className="flex items-center justify-center bg-white shadow-xl p-2 rounded-full w-20 h-20 absolute top-[-30px] ">
-        <Image src={logo} className="w-20 h-20" preview={false} alt="logo" />
+        <Image src={logo} className="w-20 h-20"  alt="logo" />
       </div>
       <span className="text-white text-sm mt-5">adaptivedesigns.com</span>
       <div className="flex gap-2 items-center justify-center">

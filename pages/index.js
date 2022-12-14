@@ -2,6 +2,7 @@ import Head from "next/head";
 import Slider from "../components/Slider";
 import HeaderComponent from "../components/HeaderComponent";
 import Services from "../components/Services";
+import Portfolio from "../components/Portfolio";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
       <HeaderComponent />
       <Slider />
       <Services/>
+      <Portfolio/>
       </div>
     </>
   );
