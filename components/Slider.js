@@ -12,12 +12,7 @@ export default function Slider() {
   const carouselRef = useRef(null);
 
   return (
-    <motion.div
-      initial={{ x: 1000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1.5 }}
-      className="flex h-full"
-    >
+    <motion.div className="flex h-full">
       <div className=" w-full relative">
         <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7">
           <Button
