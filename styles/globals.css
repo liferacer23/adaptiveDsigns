@@ -5,6 +5,7 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -93,17 +94,13 @@
   width: 8px;
   background: transparent;
   height: 0px;
- 
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
-
-
 }
 
 ::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 100;
-
 }
