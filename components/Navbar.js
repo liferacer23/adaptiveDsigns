@@ -11,7 +11,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="md:w-[100vw] bg-primary shadow-md h-[3rem] flex sm:justify-between xs:justify-between flex-row sticky top-0 z-50 overflow-y-visible md:pl-11 sm:pl-4 xs:pl-4 sm:w-[100vw] xs:w-[100vw] z-50"
+      className="overflow-x-hidden md:w-[100vw] bg-primary shadow-md h-[3rem] flex sm:justify-between xs:justify-between flex-row sticky top-0 z-50 overflow-y-visible md:pl-11 sm:pl-4 xs:pl-4 sm:w-[100vw] xs:w-[100vw] z-50"
     >
       <div className="flex w-[60%] sm:w-[80%] xs:w-[80%] gap-3 font-medium">
         <div className="flex bg-white text-white xs:w-[6rem] sm:w-[6rem] md:w-[6rem] lg:h-[6rem] xs:h-[5rem] sm:h-[5rem] px-2 justify-center items-center shadow-2xl rounded-b-full ">
