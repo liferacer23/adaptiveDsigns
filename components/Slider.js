@@ -15,7 +15,7 @@ export default function Slider() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 2 }}
       className="flex h-full"
     >
       <div className=" w-full relative">
