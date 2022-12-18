@@ -5,9 +5,9 @@ import dots from "../public/dots2.svg";
 export default function HeaderComponent() {
   return (
     <motion.div
-      initial={{ x: -1000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 1 }}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1.5 }}
       className="h-36 w-full flex items-end text-5xl px-8 pb-2 relative"
     >
       <div className="flex justify-between  2xl:gap-10 items-end md:w-[80%] lg:w-[90%] 2xl:w-[95%] relative">
