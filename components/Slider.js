@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import Carousel from "antd/lib/carousel";
 import Button from "antd/lib/button";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
@@ -11,50 +12,68 @@ export default function Slider() {
   const carouselRef = useRef(null);
 
   return (
-    <div className="flex h-full">
+    <motion.div
+      initial={{ x: 1000 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1.5 }}
+      className="flex h-full"
+    >
       <div className=" w-full relative">
         <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7">
           <Button
-          style={{border:"none"}}
+            style={{ border: "none" }}
             icon={
-              <LeftOutlined style={{ fontSize: "1rem", color: "#fff" ,background:'rgba(98, 98, 98, 0.5)', borderRadius:'50%',padding:"15px" }} />
+              <LeftOutlined
+                style={{
+                  fontSize: "1rem",
+                  color: "#fff",
+                  background: "rgba(98, 98, 98, 0.5)",
+                  borderRadius: "50%",
+                  padding: "15px",
+                }}
+              />
             }
             onClick={() => {
               carouselRef.current.prev();
             }}
           ></Button>
           <Button
-          style={{border:'none'}}
+            style={{ border: "none" }}
             icon={
-              <RightOutlined style={{ fontSize: "1rem", color: "#fff" ,background:'rgba(98, 98, 98, 0.5)', borderRadius:'50%',padding:"15px" }} />
-              
+              <RightOutlined
+                style={{
+                  fontSize: "1rem",
+                  color: "#fff",
+                  background: "rgba(98, 98, 98, 0.5)",
+                  borderRadius: "50%",
+                  padding: "15px",
+                }}
+              />
             }
             onClick={() => {
               carouselRef.current.next();
             }}
           ></Button>
         </div>
-           <div
-        className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-8 sm:h-8 text-white text-center xs:px-10 sm:px-10 lg:px-60"
-      >
-        ELEVATING THE RAW AESTHETIC FUNCTIONAL ESSENCE OF TRADITIONAL ETHIOPIAN
-        DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
-      </div>
+        <div className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-8 sm:h-8 text-white text-center xs:px-10 sm:px-10 lg:px-60">
+          ELEVATING THE RAW AESTHETIC FUNCTIONAL ESSENCE OF TRADITIONAL
+          ETHIOPIAN DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
+        </div>
         <Carousel autoplay ref={carouselRef}>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] bg-white relative">
-            <Image  src={image1} alt="image1" objectFit="cover" fill />
+            <Image src={image1} alt="image1" objectFit="cover" fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw]   relative ">
-            <Image  src={image2} alt="image2" objectFit="cover" fill />
+            <Image src={image2} alt="image2" objectFit="cover" fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]   relative ">
-            <Image  src={image3} alt="image3" objectFit="cover" fill />
+            <Image src={image3} alt="image3" objectFit="cover" fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]  relative ">
-            <Image  src={image4} alt="image4" objectFit="cover" fill />
+            <Image src={image4} alt="image4" objectFit="cover" fill />
           </div>
         </Carousel>
       </div>
-    </div>
+    </motion.div>
   );
 }
