@@ -3,6 +3,8 @@ import Slider from "../components/Slider";
 import HeaderComponent from "../components/HeaderComponent";
 import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
+import AboutUs from "../components/AboutUs";
+import Philosophy from "../components/Philosophy";
 export default function Home() {
   return (
     <>
@@ -11,11 +13,13 @@ export default function Home() {
         <meta name="description" content="Adaptive Designs" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col">
-      <HeaderComponent />
-      <Slider />
-      <Services/>
-      <Portfolio/>
+      <div className="flex flex-col overflow-x-clip">
+        <HeaderComponent />
+        <Slider />
+        <Services />
+        <Portfolio />
+        <AboutUs />
+        <Philosophy />
       </div>
     </>
   );

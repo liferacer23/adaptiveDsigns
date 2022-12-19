@@ -61,16 +61,16 @@ export default function Slider() {
         </div>
         <Carousel autoplay ref={carouselRef}>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] bg-white relative">
-            <Image src={image1} alt="image1" objectFit="cover" fill />
+            <Image src={image1} alt="image1" objectFit="cover" priority fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw]   relative ">
-            <Image src={image2} alt="image2" objectFit="cover" fill />
+            <Image src={image2} alt="image2" objectFit="cover" priority fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]   relative ">
-            <Image src={image3} alt="image3" objectFit="cover" fill />
+            <Image src={image3} alt="image3" objectFit="cover" priority fill />
           </div>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]  relative ">
-            <Image src={image4} alt="image4" objectFit="cover" fill />
+            <Image src={image4} alt="image4" objectFit="cover" priority fill />
           </div>
         </Carousel>
       </div>

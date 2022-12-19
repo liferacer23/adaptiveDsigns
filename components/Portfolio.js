@@ -4,7 +4,7 @@ import dots from "../public/dots2.svg";
 export default function Portfolio() {
   return (
     <div className="bg-white text-white lg:px-20 sm:px-5 xs:px-5 flex flex-col items-center justify-start">
-      <div className="flex justify-between pt-3">
+      <div className="flex justify-between pt-3 w-full">
         <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-white">
           <span className="text-[130px] text-black">02</span>
           <div className="h-14 flex flex-col w-full absolute bottom-0 bg-white">
@@ -17,7 +17,7 @@ export default function Portfolio() {
           <Image src={dots} alt="dots image" priority />
         </div>
       </div>
-      <div className="lg:h-[27rem] xs:h-[40rem] sm:h-[40rem] xs:flex-col sm:flex-col lg:flex-row flex items-center justify-center lg:w-[82%] xs:w-[100%] sm:w-[100%]">
+      <div className="2xl:h-[40rem] lg:h-[27rem] xs:h-[45rem] sm:h-[40rem] xs:flex-col sm:flex-col lg:flex-row flex items-center justify-center lg:w-[82%] xs:w-[100%] sm:w-[100%]">
         <div className="flex lg:flex-row xs:flex-col sm:flex-col lg:w-[90%] xs:w-[100%] sm:w-[100%] h-full bg-transparent">
           <div className="relative h-full lg:w-[50%] xs:w-[100%] sm:w-[100%]">
             <div className="p-4 flex items-center justify-center absolute h-full w-full opacity-0 hover:opacity-100 bg-black  cursor-pointer transition-all duration-1000">
