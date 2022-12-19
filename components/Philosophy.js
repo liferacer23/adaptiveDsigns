@@ -5,7 +5,7 @@ export default function Philosophy() {
     <div className="w-full flex-col bg-white px-20">
       <div className="flex w-full items-center justify-start">
         <div className="flex">
-          <span className="text-[3rem]">"</span>
+          <span className="text-[3rem]">&quot;</span>
           <div className="p-2 h-15 w-56 relative flex flex-col items-start justify-start g-0">
             <span className="font-bold text-[25px] text-black m-0 ">
               PHILOSOPHY

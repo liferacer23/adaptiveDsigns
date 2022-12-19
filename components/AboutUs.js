@@ -14,7 +14,7 @@ export default function AboutUs() {
         <div className="flex gap-5 items-start justify-center xs:w-full  sm:w-full lg:w-[40%] h-72 ">
           <div className=" h-full flex flex-col items-start justify-start">
             <span className="xs:text-[8rem] sm:text-[8rem] text-[15rem] ">
-              ''
+              &quot;
             </span>
           </div>
           <div className=" h-full flex items-center">
