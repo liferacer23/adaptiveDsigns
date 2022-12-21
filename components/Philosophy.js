@@ -1,25 +1,32 @@
 import React from "react";
-
+import Image from "next/image";
+import quots from "../public/blackQuots.svg";
 export default function Philosophy() {
   return (
-    <div className="w-full flex-col bg-white px-20">
-      <div className="flex w-full items-center justify-start">
+    <div className="w-full flex-col bg-white lg:px-20 sm:px-4 xs:px-4">
+      <div className="flex w-full items-center justify-start mb-3 bt-3">
         <div className="flex">
-          <span className="text-[3rem]">&quot;</span>
+          <Image
+            src={quots}
+            alt="quots"
+            width={35}
+            height={35}
+            className="mt-2"
+          />
           <div className="p-2 h-15 w-56 relative flex flex-col items-start justify-start g-0">
             <span className="font-bold text-[25px] text-black m-0 ">
               PHILOSOPHY
             </span>
-            <span className="-mt-2 font-bold text-[15px] text-black">
+            <span className="-mt-2 font-bold text-[12px] text-black">
               TWO CORE PRINCIPLES
             </span>
           </div>
         </div>
       </div>
       <div className="flex lg:flex-row sm:flex-col xs:flex-col items-center justify-center gap-10">
-        <div className="flex lg:w-[32%] xs:w-full sm:w-full">
-          <div></div>
-          <div className="flex flex-col">
+        <div className="flex gap-2 lg:w-[32%] xs:w-full sm:w-full">
+          <div className="bg-black xs:w-2 sm:w-2 lg:w-2 h-20"></div>
+          <div className="flex flex-col w-full">
             <span className="font-bold text-2xl">DETAILS!</span>
             <h5 className="text-xs leading-loose font-md">
               Our distinctive feature is attention to the little things and we
@@ -32,9 +39,9 @@ export default function Philosophy() {
             </h5>
           </div>
         </div>
-        <div className="flex lg:w-[32%] xs:w-full sm:w-full">
-          <div></div>
-          <div className="flex flex-col">
+        <div className="flex lg:w-[32%] xs:w-full sm:w-full gap-2">
+          <div className="bg-black xs:w-2 sm:w-2 lg:w-2 h-20"></div>
+          <div className="flex flex-col  w-full">
             <span className="font-bold text-2xl">CONTENT!</span>
             <h5 className="text-xs leading-loose font-md">
               We take pride in incorporating the Ethiopian culture into our

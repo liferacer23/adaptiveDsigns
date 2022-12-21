@@ -5,6 +5,8 @@ import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import AboutUs from "../components/AboutUs";
 import Philosophy from "../components/Philosophy";
+import HowWeWork from "../components/HowWeWork";
+import Team from "../components/Team";
 export default function Home() {
   return (
     <>
@@ -20,6 +22,8 @@ export default function Home() {
         <Portfolio />
         <AboutUs />
         <Philosophy />
+        <HowWeWork />
+        <Team />
       </div>
     </>
   );
