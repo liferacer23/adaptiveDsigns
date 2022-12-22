@@ -67,7 +67,7 @@ export default function Team() {
                 style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
               />
             </div>
-            <div className="w-full relative h-full bg-purple-400">
+            <div className="w-full relative h-full">
               <Image src={person} alt="person 1" fill objectFit="cover" />
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Team() {
                 style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
               />
             </div>
-            <div className="w-full relative h-full bg-purple-400">
+            <div className="w-full relative h-full">
               <Image src={person} alt="person 1" fill objectFit="cover" />
             </div>
           </div>
