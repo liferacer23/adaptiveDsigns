@@ -23,7 +23,7 @@ export default function HowWeWork() {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row sm:flex-col xs:flex-col items-center justify-center gap-10">
+      <div className="flex lg:flex-row sm:flex-col xs:flex-col items-center justify-center gap-10 px-5">
         <div className="flex items-start lg:w-[32%] xs:w-full sm:w-full">
           <div className="flex flex-col w-full items-start justify-start">
             <div className="flex items-center justify-start h-20 w-full gap-4 -ml-4">
