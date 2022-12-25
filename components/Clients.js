@@ -43,25 +43,25 @@ export default function Clients() {
           </div>
         </div>
       </div>
-      <div className="h-[22rem] w-full relative flex items-center justify-center mb-5">
+      <div className="lg:h-[22rem] xs:h-full sm:h-full w-full relative flex items-center justify-center mb-5">
         <div className="absolute z-20 lg:flex sm:flex xs:flex lg:w-full sm:w-full xs:w-full items-center justify-center lg:bottom-10 sm:-bottom-12 xs:-bottom-12 pr-10 pl-8">
-          <Button
-            style={{ border: "none" }}
-            icon={
-              <LeftOutlined
-                style={{
-                  fontSize: "1rem",
-                  color: "#fff",
-                  background: "rgba(98, 98, 98, 0.5)",
-                  borderRadius: "50%",
-                  padding: "15px",
-                }}
-              />
-            }
+          <span
+            className="cursor-pointer"
             onClick={() => {
               carouselRef.current.prev();
             }}
-          ></Button>
+          >
+            {" "}
+            <LeftOutlined
+              style={{
+                fontSize: "1rem",
+                color: "#fff",
+                background: "rgba(98, 98, 98, 0.5)",
+                borderRadius: "50%",
+                padding: "15px",
+              }}
+            />
+          </span>
           <div className="lg:w-[20%] sm:w-[100%] xs:w-[100%] flex flex-col items-center justify-center text-center pl-4">
             <h5 className="text-sm font-bold text-center">
               {clientNames[carouselIndex]?.name}
@@ -70,32 +70,32 @@ export default function Clients() {
               {clientNames[carouselIndex]?.position}
             </h4>
           </div>
-          <Button
-            style={{ border: "none" }}
-            icon={
-              <RightOutlined
-                style={{
-                  fontSize: "1rem",
-                  color: "#fff",
-                  background: "rgba(98, 98, 98, 0.5)",
-                  borderRadius: "50%",
-                  padding: "15px",
-                }}
-              />
-            }
+          <span
+            className="cursor-pointer"
             onClick={() => {
               carouselRef.current.next();
             }}
-          ></Button>
+          >
+            {" "}
+            <RightOutlined
+              style={{
+                fontSize: "1rem",
+                color: "#fff",
+                background: "rgba(98, 98, 98, 0.5)",
+                borderRadius: "50%",
+                padding: "15px",
+              }}
+            />
+          </span>
         </div>
-        <div className="w-full">
+        <div className="w-full h-full">
           <Carousel
             afterChange={(current) => setCarouselIndex(current)}
             autoplay
             ref={carouselRef}
             className="lg:px-24 sm:px-2 xs:px-2 h-full lg:p-8 xs:p-2 sm:p-2"
           >
-            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[40vh] xs:h-[40vh] w-[100vw] bg-white relative text-left leading-loose text-xs">
+            <div className="p-5 flex items-center justify-center lg:h-full sm:h-full xs:h-full w-[100vw] bg-white relative text-left leading-loose text-xs">
               <p>
                 It is with great pleasure that I write this testimony for
                 Adaptive design acted as our Interior Designer providing

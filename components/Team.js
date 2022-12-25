@@ -25,7 +25,7 @@ export default function Team() {
         </div>
       </div>
       <div className="xs:items-center sm:items-center relative h-[50%] bg-secondary w-full flex lg:flex-row sm:flex-col xs:flex-col lg:items-center xs:justify-center sm:justify-center lg:justify-around xs:px-2 sm:px-2 sm:py-4 xs:py-4 xs:gap-4 sm:gap-4 lg:px-10">
-        <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
+        <div className="flex flex-col  w-72 lg:h-[28rem] xs:h-full sm:h-full shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
           <div className="flex h-[28rem] w-[100%]">
             <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
               <AiOutlineInstagram
@@ -77,7 +77,7 @@ export default function Team() {
             <h5 className="text-[10px] font-bold">MANAGING PARTNER</h5>
           </div>
         </div> */}
-        <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
+        <div className="flex flex-col  w-72 lg:h-[28rem] xs:h-full sm:h-full shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
           <div className="flex h-[25rem] w-[100%]">
             <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
               <AiOutlineInstagram
