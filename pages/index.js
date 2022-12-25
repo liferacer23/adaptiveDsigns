@@ -13,11 +13,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Adaptive Designs</title>
+        <title>
+          Adaptive Designs | Interior Design | Architectural Design | Turnkey,
+          Product and Furniture
+        </title>
         <meta
-          name="Adaptive Designs"
-          content="Adaptive Designs"
-          description="Adaptive Designs"
+          name="description"
+          content="
+          We are the best Interior design company in Ethiopia, We work on different things like interior design, Architectural Design, Turnkey, Product and Furniture, and many more.
+          "
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
