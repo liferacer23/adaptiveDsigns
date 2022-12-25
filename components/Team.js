@@ -51,7 +51,7 @@ export default function Team() {
             <h5 className="text-[10px] font-bold">MANAGING PARTNER</h5>
           </div>
         </div>
-        <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
+        {/* <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
           <div className="flex h-[25rem] w-[100%]">
             <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
               <AiOutlineInstagram
@@ -76,7 +76,7 @@ export default function Team() {
             <h5 className="text-[10px] font-bold">ARCHITECT</h5>
             <h5 className="text-[10px] font-bold">MANAGING PARTNER</h5>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
           <div className="flex h-[25rem] w-[100%]">
             <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
