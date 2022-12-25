@@ -14,7 +14,11 @@ export default function Home() {
     <>
       <Head>
         <title>Adaptive Designs</title>
-        <meta name="Adaptive Designs" content="Adaptive Designs" />
+        <meta
+          name="Adaptive Designs"
+          content="Adaptive Designs"
+          description="Adaptive Designs"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col overflow-x-clip">

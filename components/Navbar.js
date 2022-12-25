@@ -23,9 +23,9 @@ export default function Navbar() {
             priority
           />
         </div>
-        <span className="text-white text-xl h-full w-full flex items-center">
+        <h1 className="text-white text-xl h-full w-full flex items-center">
           ADAPTIVE DESIGNS
-        </span>
+        </h1>
       </div>
       <div className="flex w-full justify-end items-center md:hidden sm:hidden xs:hidden lg:flex">
         <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
