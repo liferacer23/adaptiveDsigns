@@ -55,10 +55,10 @@ export default function Slider() {
             }}
           ></Button>
         </div>
-        <div className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-8 sm:h-8 text-white text-center xs:px-10 sm:px-10 lg:px-60">
+        <h2 className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-8 sm:h-8 text-white text-center xs:px-10 sm:px-10 lg:px-60">
           ELEVATING THE RAW AESTHETIC FUNCTIONAL ESSENCE OF TRADITIONAL
           ETHIOPIAN DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
-        </div>
+        </h2>
         <Carousel autoplay ref={carouselRef}>
           <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] bg-white relative">
             <Image
