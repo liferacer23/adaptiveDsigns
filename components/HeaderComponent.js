@@ -18,7 +18,7 @@ export default function HeaderComponent() {
           initial={{ x: -500 }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
-          className="w-26 rounded-full shadow-xl absolute -bottom-8 xs:right-2 sm:right-2 lg:right-10 h-12 bg-white px-5 lg:py-3 xs:py-4 sm:py-4 lg:text-[30px] font-bold xs:text-[15px] sm:text-[15px] text-center z-30"
+          className="w-26 rounded-full shadow-xl absolute -bottom-8 xs:right-1 sm:right-1 lg:right-10 h-12 bg-white px-5 lg:py-3 xs:py-4 sm:py-4 lg:text-[30px] font-bold xs:text-[15px] sm:text-[15px] text-center z-30"
         >
           CONTACT US
         </motion.span>

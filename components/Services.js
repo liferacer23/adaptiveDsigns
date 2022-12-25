@@ -14,7 +14,7 @@ export default function Services() {
         <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፩</span>
           <span className="text-md font-bold mt-4">ARCHITECTURE</span>
-          <div className="flex flex-col items-start justify-start text-sm mt-4">
+          <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <div> - Architectural design</div>
             <div> - Project consultancy </div>
             <div> - Complete building document</div>
@@ -28,7 +28,7 @@ export default function Services() {
         <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፪</span>
           <span className="text-md font-bold mt-4">INTERIOR</span>
-          <div className="flex flex-col items-start justify-start text-sm mt-4">
+          <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <div> - Concept Development</div>
             <div> - Shop Drawing </div>
             <div> - 3D Visualizations Image & Video</div>
@@ -41,7 +41,7 @@ export default function Services() {
         <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፫</span>
           <span className="text-md font-bold mt-4">TURNKEY PROJECT</span>
-          <div className="flex flex-col items-start justify-start text-sm mt-4">
+          <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <div> - Wood Work, Metal Works</div>
             <div> - Gypsum Board Works, Partition Works </div>
             <div> - Electrical, Pluming & Other fittings</div>
@@ -54,7 +54,7 @@ export default function Services() {
         <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፬</span>
           <span className="text-md font-bold mt-4">PRODUCT & FURNITURE</span>
-          <div className="flex flex-col items-start justify-start text-sm mt-4">
+          <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <div> - Product design & Development</div>
             <div> - Custom Furniture </div>
             <div> - Our Own Product Line</div>

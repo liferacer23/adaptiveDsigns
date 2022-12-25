@@ -8,6 +8,7 @@ import Philosophy from "../components/Philosophy";
 import HowWeWork from "../components/HowWeWork";
 import Team from "../components/Team";
 import Clients from "../components/Clients";
+import Blog from "../components/Blog";
 export default function Home() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function Home() {
         <HowWeWork />
         <Team />
         <Clients />
+        <Blog />
       </div>
     </>
   );

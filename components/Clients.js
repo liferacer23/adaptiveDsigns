@@ -27,8 +27,8 @@ export default function Clients() {
   ];
 
   return (
-    <div className="lg:h-[50rem] xs:h-full sm:h-full">
-      <div className="h-[20%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start pb-5">
+    <div className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14">
+      <div className="h-[20%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start">
         <div className="flex justify-between">
           <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-white">
             <span className="text-[130px] ">05</span>
@@ -43,8 +43,8 @@ export default function Clients() {
           </div>
         </div>
       </div>
-      <div className="lg:h-[22rem] xs:h-full sm:h-full w-full relative flex items-center justify-center mb-5">
-        <div className="absolute z-20 lg:flex sm:flex xs:flex lg:w-full sm:w-full xs:w-full items-center justify-center lg:bottom-10 sm:-bottom-12 xs:-bottom-12 pr-10 pl-8">
+      <div className="lg:h-full xs:h-full sm:h-full w-full relative flex items-center justify-center mb-5">
+        <div className="absolute z-20 lg:flex sm:flex xs:flex lg:w-full sm:w-full xs:w-full items-center justify-center lg:-bottom-5 sm:-bottom-12 xs:-bottom-12 pr-10 pl-8">
           <span
             className="cursor-pointer"
             onClick={() => {
