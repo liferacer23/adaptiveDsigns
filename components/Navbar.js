@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Drawer from "antd/lib/drawer";
 import Image from "next/image";
 import { Turn as Hamburger } from "hamburger-react";
 import logo from "../public/logo.svg";
 export default function Navbar() {
   // const [darkMode, setDarkMode] = useState(false);
   const [isOpen, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
   return (
     <motion.div
       initial={{ y: -100 }}
@@ -55,9 +62,49 @@ export default function Navbar() {
       </div>
       <div className="flex w-20 h-14  justify-center items-center cursor-pointer transition-all duration-500">
         <div className="md:flex lg:hidden xs:flex sm:flex justify-center items-center cursor-pointer ">
-          <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#fff" />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            size={20}
+            color="#fff"
+            onClick={showDrawer}
+          />
         </div>
       </div>
+      <Drawer
+        width="75%"
+        title={<span className="w-full text-center">ADAPTIVE DESIGN</span>}
+        placement="right"
+        onClose={onClose}
+        open={isOpen}
+      >
+        <div className="flex flex-col w-full justify-end items-center">
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            HOME
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            SERVICES
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            PORTFOLIO
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            ABOUT
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            TEAM
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            CLIENTS
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            BLOG
+          </div>
+          <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
+            CONTACT
+          </div>
+        </div>
+      </Drawer>
     </motion.div>
   );
 }
