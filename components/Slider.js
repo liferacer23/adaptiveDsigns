@@ -55,7 +55,7 @@ export default function Slider() {
             }}
           ></Button>
         </div>
-        <h2 className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-8 sm:h-8 text-white text-center xs:px-10 sm:px-10 lg:px-60">
+        <h2 className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-[fit-content] sm:h-[fit-content] text-white text-center xs:px-10 sm:px-10 lg:px-60">
           ELEVATING THE RAW AESTHETIC FUNCTIONAL ESSENCE OF TRADITIONAL
           ETHIOPIAN DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
         </h2>
