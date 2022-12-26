@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
       </motion.div>
       <motion.div className={isOpen ? "block" : "hidden"}>
-        <div className="flex flex-col w-72 justify-end items-center">
+        <div className="flex flex-col w-full justify-end items-center">
           <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
             HOME
           </div>
