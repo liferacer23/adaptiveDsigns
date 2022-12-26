@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Drawer from "antd/lib/drawer";
 import Image from "next/image";
 import { Turn as Hamburger } from "hamburger-react";
 import logo from "../public/logo.svg";
 export default function Navbar() {
   // const [darkMode, setDarkMode] = useState(false);
   const [isOpen, setOpen] = useState(false);
-  const showDrawer = () => {
-    setOpen(true);
-  };
-  const onClose = () => {
-    setOpen(false);
-  };
   return (
     <>
       <motion.div
@@ -68,19 +61,20 @@ export default function Navbar() {
               toggle={setOpen}
               size={20}
               color="#fff"
-              onClick={showDrawer}
+              onClick={() => {
+                setOpen(!isOpen);
+              }}
             />
           </div>
         </div>
       </motion.div>
-      <Drawer
-        width="75%"
-        title={<span className="w-full text-center">ADAPTIVE DESIGN</span>}
-        placement="right"
-        onClose={onClose}
-        open={isOpen}
+      <motion.div
+        initial={{ x: 1500 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1 }}
+        className={isOpen ? "block" : "hidden"}
       >
-        <div className="flex flex-col w-full justify-end items-center">
+        <div className="flex flex-col w-96 justify-end items-center">
           <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
             HOME
           </div>
@@ -106,7 +100,7 @@ export default function Navbar() {
             CONTACT
           </div>
         </div>
-      </Drawer>
+      </motion.div>
     </>
   );
 }

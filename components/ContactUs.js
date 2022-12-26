@@ -47,15 +47,22 @@ export default function ContactUs() {
         <div className="flex flex-col items-center justify-center w-[fit-content]">
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Name</span>
-            <Input className="w-96 h-10 mt-2" size="large" />
+            <Input
+              className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
+              size="large"
+            />
           </div>
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Email</span>
-            <Input className="w-96 h-10 mt-2" size="large" type="email" />
+            <Input
+              className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
+              size="large"
+              type="email"
+            />
           </div>
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Message</span>
-            <TextArea className="w-96 h-10 mt-2" />
+            <TextArea className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2" />
           </div>
           <div className="flex flex-col items-start justify-start">
             <Button className="rounded-full h-12 mt-5 bg-white shadow-xl font-bold text-xl">
