@@ -9,6 +9,7 @@ import HowWeWork from "../components/HowWeWork";
 import Team from "../components/Team";
 import Clients from "../components/Clients";
 import Blog from "../components/Blog";
+import ContactUs from "../components/ContactUs";
 export default function Home() {
   return (
     <>
@@ -36,6 +37,7 @@ export default function Home() {
         <Team />
         <Clients />
         <Blog />
+        <ContactUs />
       </div>
     </>
   );

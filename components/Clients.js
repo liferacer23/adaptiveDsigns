@@ -63,12 +63,12 @@ export default function Clients() {
             />
           </span>
           <div className="lg:w-[20%] sm:w-[100%] xs:w-[100%] flex flex-col items-center justify-center text-center pl-4">
-            <h5 className="text-sm font-bold text-center">
+            <span className="text-sm font-bold text-center">
               {clientNames[carouselIndex]?.name}
-            </h5>
-            <h4 className="text-xs text-center">
+            </span>
+            <span className="text-xs text-center">
               {clientNames[carouselIndex]?.position}
-            </h4>
+            </span>
           </div>
           <span
             className="cursor-pointer"

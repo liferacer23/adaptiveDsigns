@@ -22,15 +22,15 @@ export default function AboutUs() {
           />
 
           <div className=" h-full flex items-start">
-            <h2 className="xs:text-[1rem] sm:text-[1rem] lg:text-[1.8rem]">
+            <span className="xs:text-[1rem] sm:text-[1rem] lg:text-[1.8rem]">
               WE CREATE DESIGNS THAT INSPIRE, IMPRESS, REFRESH AND EVOKE PRIDE
               IN OUR ETHIOPIAN HERITAGE
-            </h2>
+            </span>
           </div>
         </div>
         <div className="flex gap-5 items-start justify-center xs:w-full  sm:w-full lg:w-[40%] ">
           <div className="flex items-center justify-center p-4">
-            <h2 className="text-[0.8rem]">
+            <span className="text-[0.8rem]">
               Adaptive designs is a registered creative design company found in
               2019 GC based in Addis Ababa, Ethiopia. We are engaged in
               producing state of the art services on architecture, interior
@@ -38,7 +38,7 @@ export default function AboutUs() {
               follow a user experience first approach in all of our disciplines
               in addition to embodying the Ethiopian cultural essence in a
               contemporary manner.
-            </h2>
+            </span>
           </div>
         </div>
       </div>

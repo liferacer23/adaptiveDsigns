@@ -3,7 +3,7 @@ import Image from "next/image";
 import quots from "../public/blackQuots.svg";
 export default function HowWeWork() {
   return (
-    <div className="w-full flex-col bg-[#E5E8E8] lg:px-20 sm:px-4 xs:px-4 py-5">
+    <div className="w-full flex-col bg-[#E5E8E8] lg:px-20 sm:px-4 xs:px-4 py-10">
       <div className="flex w-full items-center justify-start mb-3 bt-3">
         <div className="flex">
           <Image
@@ -34,11 +34,11 @@ export default function HowWeWork() {
                 STATEMENT OF THE PROBLEM
               </span>
             </div>
-            <h5 className="text-xs leading-loose font-md">
+            <span className="text-xs leading-loose font-md">
               t creating the project, we have to prepare in a certain way.
               Usually we hold one or several meetings with the clients and find
               out their ideas and requirements to the future design.
-            </h5>
+            </span>
           </div>
         </div>
         <div className="flex items-start lg:w-[32%] xs:w-full sm:w-full">
@@ -51,11 +51,11 @@ export default function HowWeWork() {
                 DEVELOPMENT OF DESIGNS & RENDERINGS
               </span>
             </div>
-            <h5 className="text-xs leading-loose font-md">
+            <span className="text-xs leading-loose font-md">
               To start creating the project, we have to prepare in a certain
               way. Usually we hold one or several meetings with the clients and
               find out their ideas and requirements to the future design.
-            </h5>
+            </span>
           </div>
         </div>
         <div className="flex items-start lg:w-[32%] xs:w-full sm:w-full">
@@ -68,11 +68,11 @@ export default function HowWeWork() {
                 STATEMENT OF THE PROBLEM
               </span>
             </div>
-            <h5 className="text-xs leading-loose font-md">
+            <span className="text-xs leading-loose font-md">
               To start creating the project, we have to prepare in a certain
               way. Usually we hold one or several meetings with the clients and
               find out their ideas and requirements to the future design.
-            </h5>
+            </span>
           </div>
         </div>
       </div>

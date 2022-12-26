@@ -5,7 +5,7 @@ export default function Blog() {
     <div className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start ">
       <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-secondary">
         <span className="text-[130px] text-white">06</span>
-        <div className="h-16 flex flex-col w-full px-2 absolute bottom-0 bg-secondary">
+        <div className="h-16 flex flex-col w-22 px-2 absolute bottom-0 bg-secondary">
           <span className="font-bold text-2xl">BLOG</span>
           <span className="font-bold text-md">UPDATES</span>
         </div>

@@ -46,9 +46,9 @@ export default function Team() {
             </div>
           </div>
           <div className="w-[100%] h-12 text-white ml-7">
-            <h5 className="text-sm font-bold">DAWIT ABEBE</h5>
-            <h5 className="text-[10px] font-bold">ARCHITECT</h5>
-            <h5 className="text-[10px] font-bold">MANAGING PARTNER</h5>
+            <span className="text-sm font-bold">DAWIT ABEBE</span>
+            <span className="text-[10px] font-bold">ARCHITECT</span>
+            <span className="text-[10px] font-bold">MANAGING PARTNER</span>
           </div>
         </div>
         {/* <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
@@ -72,9 +72,9 @@ export default function Team() {
             </div>
           </div>
           <div className="w-[100%] h-12 text-white ml-7">
-            <h5 className="text-sm font-bold">DAWIT ABEBE</h5>
-            <h5 className="text-[10px] font-bold">ARCHITECT</h5>
-            <h5 className="text-[10px] font-bold">MANAGING PARTNER</h5>
+            <span className="text-sm font-bold">DAWIT ABEBE</span>
+            <span className="text-[10px] font-bold">ARCHITECT</span>
+            <span className="text-[10px] font-bold">MANAGING PARTNER</span>
           </div>
         </div> */}
         <div className="flex flex-col  w-72 lg:h-[28rem] xs:h-full sm:h-full shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
@@ -98,9 +98,9 @@ export default function Team() {
             </div>
           </div>
           <div className="w-[100%] h-12 text-white ml-7">
-            <h5 className="text-sm font-bold">DAWIT ABEBE</h5>
-            <h5 className="text-[10px] font-bold">ARCHITECT</h5>
-            <h5 className="text-[10px] font-bold">MANAGING PARTNER</h5>
+            <span className="text-sm font-bold">DAWIT ABEBE</span>
+            <span className="text-[10px] font-bold">ARCHITECT</span>
+            <span className="text-[10px] font-bold">MANAGING PARTNER</span>
           </div>
         </div>
       </div>
