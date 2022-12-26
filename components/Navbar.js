@@ -68,13 +68,8 @@ export default function Navbar() {
           </div>
         </div>
       </motion.div>
-      <motion.div
-        initial={{ x: 1500 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 1 }}
-        className={isOpen ? "block" : "hidden"}
-      >
-        <div className="flex flex-col w-96 justify-end items-center">
+      <motion.div className={isOpen ? "block" : "hidden"}>
+        <div className="flex flex-col w-72 justify-end items-center">
           <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm">
             HOME
           </div>
