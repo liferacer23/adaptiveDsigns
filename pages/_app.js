@@ -1,10 +1,15 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
-function MyApp({ Component, pageProps }) {
+import { AnimatePresence, LazyMotion, domAnimation } from "framer-motion";
+function MyApp({ Component, pageProps, router }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <LazyMotion features={domAnimation}>
+      <Layout>
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+      </Layout>
+    </LazyMotion>
   );
 }
 

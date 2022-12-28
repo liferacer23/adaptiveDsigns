@@ -3,7 +3,10 @@ import Image from "next/image";
 import quots from "../public/blackQuots.svg";
 export default function HowWeWork() {
   return (
-    <div className="w-full flex-col bg-[#E5E8E8] lg:px-20 sm:px-4 xs:px-4 py-10">
+    <div
+      id="Work"
+      className="w-full flex-col bg-[#E5E8E8] lg:px-20 sm:px-4 xs:px-4 py-10"
+    >
       <div className="flex w-full items-center justify-start mb-3 bt-3">
         <div className="flex">
           <Image

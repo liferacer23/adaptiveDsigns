@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Services() {
   return (
-    <div className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start ">
+    <div
+      id="Services"
+      className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start "
+    >
       <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-secondary">
         <span className="text-[130px] text-white">01</span>
         <div className="h-14 flex flex-col w-full absolute bottom-0 bg-secondary">

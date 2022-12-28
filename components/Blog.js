@@ -2,7 +2,10 @@ import React from "react";
 import Button from "antd/lib/button";
 export default function Blog() {
   return (
-    <div className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start ">
+    <div
+      id="Blog"
+      className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start "
+    >
       <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-secondary">
         <span className="text-[130px] text-white">06</span>
         <div className="h-16 flex flex-col w-22 px-2 absolute bottom-0 bg-secondary">

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Slider from "../components/Slider";
 import HeaderComponent from "../components/HeaderComponent";
@@ -11,6 +12,9 @@ import Clients from "../components/Clients";
 import Blog from "../components/Blog";
 import ContactUs from "../components/ContactUs";
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Head>
@@ -26,7 +30,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col overflow-x-clip">
+      <div className="flex flex-col overflow-hidden">
         <HeaderComponent />
         <Slider />
         <Services />
