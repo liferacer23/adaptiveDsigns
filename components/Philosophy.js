@@ -5,7 +5,7 @@ export default function Philosophy() {
   return (
     <div
       id="Philosophy"
-      className="w-full flex-col bg-white lg:px-20 sm:px-4 xs:px-4 py-10"
+      className="w-full flex-col bg-white lg:px-20 sm:px-4 xs:px-4 py-12"
     >
       <div className="flex w-full items-center justify-start mb-3 bt-3">
         <div className="flex">

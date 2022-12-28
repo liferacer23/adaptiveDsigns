@@ -6,7 +6,7 @@ export default function HeaderComponent() {
   return (
     <motion.div
       id="Header"
-      className="h-36 w-full flex items-end text-5xl px-8 pb-2 relative"
+      className="h-36 w-full flex items-end text-5xl px-8 pb-2 relative py-12"
     >
       <div className="flex justify-between  2xl:gap-10 items-end md:w-[80%] lg:w-[90%] 2xl:w-[95%] relative">
         <h1 className="lg:text-[45px] font-bold xs:text-[30px] sm:text-[30px] sm:text-left xs:text-left">

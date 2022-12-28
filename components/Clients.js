@@ -28,7 +28,7 @@ export default function Clients() {
   return (
     <div
       id="Clients"
-      className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14"
+      className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14 py-12"
     >
       <div className="h-[20%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start">
         <div className="flex justify-between">

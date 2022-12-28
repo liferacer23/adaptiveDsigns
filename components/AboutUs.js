@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div
       id="AboutUs"
-      className="mt-5 bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start pb-5"
+      className="mt-5 bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start py-12"
     >
       <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-secondary">
         <span className="text-[130px] text-white">03</span>

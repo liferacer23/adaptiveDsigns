@@ -10,7 +10,7 @@ export default function Navbar() {
   // const [darkMode, setDarkMode] = useState(false);
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="relative  z-50" id="navBar">
+    <div className=" sticky top-0  z-50" id="navBar">
       <AnimatePresence>
         {isOpen && <CartModal setOpen={setOpen} isOpen={isOpen} />}
       </AnimatePresence>
@@ -22,7 +22,7 @@ export default function Navbar() {
       >
         <div className="flex w-[60%] sm:w-[80%] xs:w-[80%] gap-3 font-medium">
           <Link href="#Header">
-            <div className="flex bg-white text-white xs:w-[6rem] sm:w-[6rem] md:w-[6rem] lg:h-[6rem] xs:h-[5rem] sm:h-[5rem] px-2 justify-center items-center shadow-2xl rounded-b-full z-50">
+            <div className="flex bg-white text-white xs:w-[4.5rem] sm:w-[4.5rem] md:w-[5rem] lg:h-[5.5rem] xs:h-[5rem] sm:h-[5rem] px-2 justify-center items-center shadow-2xl rounded-b-full z-50">
               <Image
                 src={logo}
                 alt="navbar logo image"

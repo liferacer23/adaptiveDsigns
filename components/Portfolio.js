@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <div
       id="Portfolio"
-      className="bg-white text-white lg:px-20 sm:px-5 xs:px-5 flex flex-col items-center justify-start"
+      className="bg-white text-white lg:px-20 sm:px-5 xs:px-5 flex flex-col items-center justify-start py-12"
     >
       <div className="flex justify-between pt-3 w-full">
         <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-white">

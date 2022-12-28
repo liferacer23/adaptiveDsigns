@@ -30,7 +30,11 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col overflow-hidden">
+      <div
+        className="flex flex-col overflow-hidden
+      transition-all duration-1000
+      "
+      >
         <HeaderComponent />
         <Slider />
         <Services />

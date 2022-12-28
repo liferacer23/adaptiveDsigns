@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div
       id="Services"
-      className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start "
+      className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start py-12"
     >
       <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-secondary">
         <span className="text-[130px] text-white">01</span>
