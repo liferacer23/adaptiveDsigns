@@ -17,7 +17,7 @@ export default function Slider() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="flex h-full"
+      className="flex h-[fit-content] w-full "
     >
       <div className=" w-full relative">
         <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7">
@@ -61,7 +61,7 @@ export default function Slider() {
           ETHIOPIAN DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
         </h2>
         <Carousel autoplay ref={carouselRef}>
-          <div className="md:h-[50rem] sm:h-[30vh] xs:h-[30vh] w-[100vw] bg-white relative">
+          <div className="md:h-[50rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image1}
               alt="image1"
@@ -70,7 +70,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw]   relative ">
+          <div className="md:h-[50rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image2}
               alt="image2"
@@ -79,7 +79,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]   relative ">
+          <div className="md:h-[50rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image3}
               alt="image3"
@@ -88,7 +88,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh]  w-[100vw]  relative ">
+          <div className="md:h-[50rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image4}
               alt="image4"
