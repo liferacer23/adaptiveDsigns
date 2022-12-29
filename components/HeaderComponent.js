@@ -8,12 +8,12 @@ export default function HeaderComponent() {
       id="Header"
       className="h-36 w-full flex items-end text-5xl px-8 pb-2 relative py-12"
     >
-      <div className="flex justify-between  2xl:gap-10 items-end md:w-[80%] lg:w-[90%] 2xl:w-[95%] relative">
+      <div className="flex justify-between  2xl:gap-10 items-end md:w-[80%] lg:w-[90%] 2xl:w-[95%] relative ">
         <h1 className="lg:text-[45px] font-bold xs:text-[30px] sm:text-[30px] sm:text-left xs:text-left">
           {" "}
           ADAPT ELEVATE DELIVER
         </h1>
-        <div className="md:w-[30%] md:h-[30%] xs:h-[90%] sm:h-[90%]  xs:w-[100%] sm:w-[100%]">
+        <div className="md:w-[30%] md:h-[30%] xs:h-[90%] sm:h-[100%]  xs:w-[100%] sm:w-[100%] lg:pl-10">
           {" "}
           <Image src={dots} alt="dots image" priority />
         </div>

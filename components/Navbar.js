@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Turn as Hamburger } from "hamburger-react";
@@ -9,8 +9,12 @@ import Link from "next/link";
 export default function Navbar() {
   // const [darkMode, setDarkMode] = useState(false);
   const [isOpen, setOpen] = useState(false);
+  useEffect(() => {
+    if (isOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [isOpen]);
   return (
-    <div className=" sticky top-0  z-50" id="navBar">
+    <div className="sticky top-0 z-50" id="navBar">
       <AnimatePresence>
         {isOpen && <CartModal setOpen={setOpen} isOpen={isOpen} />}
       </AnimatePresence>

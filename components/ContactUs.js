@@ -6,7 +6,7 @@ import Button from "antd/lib/button";
 export default function ContactUs() {
   return (
     <div
-      id="ContactUs"
+      id="Contact"
       className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14 py-12"
     >
       <div className="h-[20%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start">

@@ -61,7 +61,7 @@ export default function Slider() {
           ETHIOPIAN DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
         </h2>
         <Carousel autoplay ref={carouselRef}>
-          <div className="md:h-[50rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] bg-white relative">
+          <div className="md:h-[50rem] sm:h-[30vh] xs:h-[30vh] w-[100vw] bg-white relative">
             <Image
               src={image1}
               alt="image1"

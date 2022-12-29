@@ -10,7 +10,7 @@ export default function Team() {
   return (
     <div className="lg:h-[50rem] xs:h-full sm:h-full py-12" id="Team">
       <div className="h-[50%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start pb-5">
-        <div className="flex justify-between">
+        <div className="flex justify-between pt-3 w-full lg:pr-20">
           <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-white">
             <span className="text-[130px] ">04</span>
             <div className="h-16 flex flex-col px-3 absolute bottom-2 bg-white">

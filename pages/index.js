@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Slider from "../components/Slider";
 import HeaderComponent from "../components/HeaderComponent";
@@ -12,9 +12,11 @@ import Clients from "../components/Clients";
 import Blog from "../components/Blog";
 import ContactUs from "../components/ContactUs";
 export default function Home() {
+  const [openModal, setOpenModal] = useState(false);
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (openModal) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [openModal]);
   return (
     <>
       <Head>
@@ -31,14 +33,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        className="flex flex-col overflow-hidden
+        className={`flex flex-col
       transition-all duration-1000
-      "
+      `}
       >
         <HeaderComponent />
         <Slider />
         <Services />
-        <Portfolio />
+        <Portfolio openModal={openModal} setOpenModal={setOpenModal} />
         <AboutUs />
         <Philosophy />
         <HowWeWork />
