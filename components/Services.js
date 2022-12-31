@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 export default function Services() {
   const { ref, inView } = useInView({});
   return (
@@ -20,9 +21,17 @@ export default function Services() {
         </div>
       </div>
       <div className="flex flex-wrap xs:items-center sm:items-center xs:justify-center sm:justify-center lg:justify-center xl:justify-around  w-full gap-2">
-        <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
+        <div className="flex flex-col xs:items-start sm:items-start lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፩</span>
           <span className="text-md font-bold mt-4">ARCHITECTURE</span>
+          <div className="my-4 w-full flex items-center lg:justify-start ">
+            <Image
+              src="/architecture.svg"
+              alt="architecture icon"
+              width={100}
+              height={100}
+            />
+          </div>
           <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <span> - Architectural design</span>
             <span> - Project consultancy </span>
@@ -34,9 +43,17 @@ export default function Services() {
             contemporary design
           </span>
         </div>
-        <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
+        <div className="flex flex-col xs:items-start sm:items-start lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፪</span>
           <span className="text-md font-bold mt-4">INTERIOR</span>
+          <div className="my-4 w-full flex items-center lg:justify-start ">
+            <Image
+              src="/interior.svg"
+              alt="architecture icon"
+              width={100}
+              height={100}
+            />
+          </div>
           <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <span> - Concept Development</span>
             <span> - Shop Drawing </span>
@@ -47,9 +64,17 @@ export default function Services() {
             essence by thoroughly tailored to your specific and deepest needs.
           </span>
         </div>
-        <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
+        <div className="flex flex-col xs:items-start sm:items-start lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፫</span>
           <span className="text-md font-bold mt-4">TURNKEY PROJECT</span>
+          <div className="my-4 w-full flex items-center lg:justify-start ">
+            <Image
+              src="/turnkey.svg"
+              alt="architecture icon"
+              width={100}
+              height={100}
+            />
+          </div>
           <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <span> - Wood Work, Metal Works</span>
             <span> - Gypsum Board Works, Partition Works </span>
@@ -60,9 +85,17 @@ export default function Services() {
             in a way that saves you both time and resources it needs.
           </span>
         </div>
-        <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
+        <div className="flex flex-col xs:items-start sm:items-start lg:items-start justify-start my-5 w-72">
           <span className="text-xl font-bold">፬</span>
           <span className="text-md font-bold mt-4">PRODUCT & FURNITURE</span>
+          <div className="my-4 w-full flex items-center lg:justify-start ">
+            <Image
+              src="/furniture.svg"
+              alt="architecture icon"
+              width={100}
+              height={100}
+            />
+          </div>
           <div className="flex flex-col items-start justify-start text-sm mt-4 w-full">
             <span> - Product design & Development</span>
             <span> - Custom Furniture </span>
