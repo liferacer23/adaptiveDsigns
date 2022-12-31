@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { BiArrowBack } from "react-icons/bi";
+import Image from "next/image";
 export default function PortfolioModal({ open, setOpenModal, modalData }) {
   useEffect(() => {
     const handleScroll = (event) => {
@@ -20,25 +22,57 @@ export default function PortfolioModal({ open, setOpenModal, modalData }) {
       animate={{ scale: open ? 1 : 0, opacity: open ? 1 : 0 }}
       transition={{ duration: 1 }}
       exit={{ scale: 0, opacity: 0 }}
-      className="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-75 z-50 "
+      className="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-75 z-50
+"
       onClick={() => setOpenModal(false)}
     >
       <motion.div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="w-full h-full flex items-center flex-col m-auto p-4 bg-white rounded-lg shadow-xl"
+        className="w-full h-full flex items-center flex-col m-auto p-4 bg-white rounded-lg shadow-xl
+      overflow-auto "
       >
+        <div className="w-full h-[fit-content] flex items-center justify-start">
+          <button
+            onClick={() => setOpenModal(false)}
+            className="px-4 py-2 font-bold rounded-full focus:outline-none focus:shadow-outline"
+          >
+            <BiArrowBack className="inline-block mr-2 text-2xl" color="#000" />{" "}
+          </button>
+        </div>
         <h2 className="text-2xl font-bold mb-4">
-          {modalData && modalData.title}
+          {modalData.title && modalData.title}
         </h2>
-        <p className="text-gray-700 mb-4">{modalData && modalData.content}</p>
-        <button
-          onClick={() => setOpenModal(false)}
-          className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-        >
-          Close
-        </button>
+        <p className="text-gray-700 mb-4">
+          {modalData.content && modalData.content}
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          veritatis dolore tenetur corporis nulla! Eveniet eos voluptatibus
+          nihil a veniam vitae molestiae! Quam voluptates, fugiat doloremque
+          aspernatur cum esse nihil!
+        </p>
+        <div className="w-full flex flex-wrap p-2 items-center justify-center">
+          {modalData.images &&
+            modalData.images.map(
+              (image, index) => (
+                console.log(image),
+                (
+                  <Image
+                    key={index}
+                    src={image}
+                    layout={`${
+                      modalData.multiple === true ? "fixed" : "responsive"
+                    }`}
+                    width={modalData.multiple === true ? 300 : 500}
+                    height={modalData.multiple === true ? 300 : 500}
+                    alt="Portfolio image"
+                  />
+                )
+              )
+            )}
+        </div>
       </motion.div>
     </motion.div>
   );

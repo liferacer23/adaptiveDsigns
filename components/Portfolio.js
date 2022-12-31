@@ -41,7 +41,12 @@ export default function Portfolio({ openModal, setOpenModal }) {
           <div className="flex lg:flex-row xs:flex-col sm:flex-col lg:w-[90%] xs:w-[100%] sm:w-[100%] h-full bg-transparent">
             <div
               onClick={() =>
-                handleModal({ title: "Portfolio 1", content: "Portfolio 1" })
+                handleModal({
+                  title: "Portfolio 1",
+                  content: "Cafe",
+                  images: ["/cafe.webp"],
+                  multiple: false,
+                })
               }
               className="relative h-full lg:w-[50%] xs:w-[100%] sm:w-[100%]"
             >
@@ -54,7 +59,12 @@ export default function Portfolio({ openModal, setOpenModal }) {
               <div
                 className="h-[50%] w-full "
                 onClick={() =>
-                  handleModal({ title: "Portfolio 2", content: "Portfolio 2" })
+                  handleModal({
+                    title: "Portfolio 2",
+                    content: "Portfolio 2",
+                    images: ["/coffee.webp", "/chair.webp"],
+                    multiple: true,
+                  })
                 }
               >
                 <div className="relative h-full w-[100%] flex justify-between items-center">
@@ -68,7 +78,12 @@ export default function Portfolio({ openModal, setOpenModal }) {
               <div
                 className="relative h-[50%] w-full"
                 onClick={() =>
-                  handleModal({ title: "Portfolio 3", content: "Portfolio 3" })
+                  handleModal({
+                    title: "Portfolio 3",
+                    content: "Portfolio 3",
+                    images: ["/conference.webp"],
+                    multiple: false,
+                  })
                 }
               >
                 <div className=" absolute p-4 flex items-center justify-center h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
