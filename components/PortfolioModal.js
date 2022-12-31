@@ -24,7 +24,6 @@ export default function PortfolioModal({ open, setOpenModal, modalData }) {
       exit={{ scale: 0, opacity: 0 }}
       className="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-75 z-50
 "
-      onClick={() => setOpenModal(false)}
     >
       <motion.div
         initial={{ y: -50, opacity: 0 }}
@@ -55,23 +54,18 @@ export default function PortfolioModal({ open, setOpenModal, modalData }) {
         </p>
         <div className="w-full flex flex-wrap p-2 items-center justify-center">
           {modalData.images &&
-            modalData.images.map(
-              (image, index) => (
-                console.log(image),
-                (
-                  <Image
-                    key={index}
-                    src={image}
-                    layout={`${
-                      modalData.multiple === true ? "fixed" : "responsive"
-                    }`}
-                    width={modalData.multiple === true ? 300 : 500}
-                    height={modalData.multiple === true ? 300 : 500}
-                    alt="Portfolio image"
-                  />
-                )
-              )
-            )}
+            modalData.images.map((image, index) => (
+              <Image
+                key={index}
+                src={image}
+                layout={`${
+                  modalData.multiple === true ? "fixed" : "responsive"
+                }`}
+                width={modalData.multiple === true ? 300 : 500}
+                height={modalData.multiple === true ? 300 : 500}
+                alt="Portfolio image"
+              />
+            ))}
         </div>
       </motion.div>
     </motion.div>
