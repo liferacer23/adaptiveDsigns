@@ -6,9 +6,19 @@ import { GrFacebookOption } from "react-icons/gr";
 import { AiOutlineInstagram } from "react-icons/ai";
 import dots from "../public/dots2.svg";
 import person from "../public/team1.svg";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 export default function Team() {
+  const { ref, inView } = useInView({});
   return (
-    <div className="lg:h-[50rem] xs:h-full sm:h-full py-12" id="Team">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      ref={ref}
+      className="lg:h-[50rem] xs:h-full sm:h-full py-12"
+      id="Team"
+    >
       <div className="h-[50%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start pb-5">
         <div className="flex justify-between pt-3 w-full lg:pr-20">
           <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-white">
@@ -104,6 +114,6 @@ export default function Team() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

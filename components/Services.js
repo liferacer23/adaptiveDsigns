@@ -1,8 +1,14 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export default function Services() {
+  const { ref, inView } = useInView({});
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      ref={ref}
       id="Services"
       className="bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start py-12"
     >
@@ -51,7 +57,7 @@ export default function Services() {
           </div>
           <span className="text-sm mt-12">
             Precise and robust execution of both interior and exterior designs
-            in a way that saves you both time and resources. t needs.
+            in a way that saves you both time and resources it needs.
           </span>
         </div>
         <div className="flex flex-col xs:items-center sm:items-center lg:items-start justify-start my-5 w-72">
@@ -69,6 +75,6 @@ export default function Services() {
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

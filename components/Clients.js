@@ -3,9 +3,12 @@ import Image from "next/image";
 import dots from "../public/dots2.svg";
 import Carousel from "antd/lib/carousel";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export default function Clients() {
   const carouselRef = useRef(null);
   const [carouselIndex, setCarouselIndex] = useState(0);
+  const { ref, inView } = useInView({});
   const clientNames = [
     {
       name: "Birhanie Nesredin",
@@ -26,7 +29,11 @@ export default function Clients() {
   ];
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      ref={ref}
       id="Clients"
       className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14 py-12"
     >
@@ -188,6 +195,6 @@ export default function Clients() {
           </Carousel>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

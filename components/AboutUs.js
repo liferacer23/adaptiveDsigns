@@ -1,9 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import quots from "../public/quots.svg";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 export default function AboutUs() {
+  const { ref, inView } = useInView({});
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      ref={ref}
       id="AboutUs"
       className="mt-5 bg-secondary text-white lg:px-20 xs:px-4 sm:px-4 h-full flex flex-col items-start justify-start py-12"
     >
@@ -45,6 +52,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

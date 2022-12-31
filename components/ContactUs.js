@@ -3,9 +3,16 @@ import Image from "next/image";
 import Input from "antd/lib/input";
 import TextArea from "antd/lib/input/TextArea";
 import Button from "antd/lib/button";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export default function ContactUs() {
+  const { ref, inView } = useInView({});
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      ref={ref}
       id="Contact"
       className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14 py-12"
     >
@@ -74,6 +81,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

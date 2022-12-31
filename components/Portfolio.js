@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import dots from "../public/dots2.svg";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import PortfolioModal from "./PortfolioModal";
+import { useInView } from "react-intersection-observer";
 export default function Portfolio({ openModal, setOpenModal }) {
   const [modalData, setModalModalData] = useState({});
 
+  const { ref, inView } = useInView({});
+
+  useEffect(() => {}, [inView]);
   const handleModal = (data) => {
     setModalModalData(data);
     setOpenModal(true);
   };
   return (
     <>
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+        transition={{ duration: 1 }}
+        ref={ref}
         id="Portfolio"
         className="bg-white text-white lg:px-20 sm:px-5 xs:px-5 flex flex-col items-center justify-start py-12"
       >
@@ -71,7 +79,7 @@ export default function Portfolio({ openModal, setOpenModal }) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <AnimatePresence>
         {openModal && (
           <PortfolioModal

@@ -1,9 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import quots from "../public/blackQuots.svg";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
 export default function Philosophy() {
+  const { ref, inView } = useInView({});
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+      transition={{ duration: 1 }}
+      ref={ref}
       id="Philosophy"
       className="w-full flex-col bg-white lg:px-20 sm:px-4 xs:px-4 py-12"
     >
@@ -58,6 +66,6 @@ export default function Philosophy() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
