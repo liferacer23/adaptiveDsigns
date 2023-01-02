@@ -58,7 +58,6 @@ export default function ContactUs() {
             width="100%"
             height="100%"
             allowfullscreen=""
-            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
