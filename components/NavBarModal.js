@@ -34,7 +34,7 @@ export default function CartModal({ setOpen, isOpen }) {
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 800, opacity: 0 }}
         exit={{ x: 800, opacity: 0 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className={`${
           !isOpen ? "hidden" : ""
         } overflow-y-auto overflow-x-hidden absolute bg-white top-0 right-0 h-full z-50 w-52 md:w-3/5 flex flex-col p-2 items-center justify-start px-5 md:px-14`}

@@ -14,7 +14,7 @@ export default function ContactUs() {
       transition={{ duration: 1 }}
       ref={ref}
       id="Contact"
-      className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14 py-12"
+      className="lg:h-full xs:h-full sm:h-full xs:mb-14 sm:mb-14"
     >
       <div className="h-[20%] mt-5 bg-whit lg:px-20 xs:px-4 sm:px-4  flex flex-col items-start justify-start">
         <div className="flex justify-between">
@@ -27,6 +27,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+
       <div className="flex lg:flex-row sm:flex-col xs:flex-col px-10 items-center justify-evenly">
         <div className="flex flex-col w-[fit-content]">
           <div className="w-full flex flex-col items-start justify-start">
@@ -37,7 +38,6 @@ export default function ContactUs() {
             <span className="font-bold text-md mt-5">Phone</span>
             <span className=" text-xs mt-2">+251-924307368</span>
             <span className=" text-xs mt-2">+251-922597447</span>
-            <span className=" text-xs mt-2">+251-10929680</span>
           </div>
           <div className="w-full flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Hours</span>
@@ -46,13 +46,21 @@ export default function ContactUs() {
           <div className="w-full flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">ADDRESS</span>
             <span className=" text-xs mt-2">
-              Megenagna, Equatorial Guninea St,
+              Bole Atlas, Namibia St, Addis Ababa Ethiopia, LIYU BLG Behind Mado
+              Hote
             </span>
             <span className=" text-xs mt-2">Addis Ababa, Ethiopia</span>
-            <span className=" text-xs mt-2">
-              Amare Abreham BLG infront of Deratu BLG
-            </span>
           </div>
+        </div>
+        <div className="block h-[30rem] w-full py-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.6990753168006!2d38.7825746!3d8.9998128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85593d97581f%3A0xb8972362824c1035!2sADAPTIVE%20INTERIOR%20DESIGNS!5e0!3m2!1sen!2set!4v1672681639513!5m2!1sen!2set"
+            width="100%"
+            height="100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div className="flex flex-col items-center justify-center w-[fit-content]">
           <div className="flex flex-col items-start justify-start">

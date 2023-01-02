@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Turn as Hamburger } from "hamburger-react";
 import { AnimatePresence } from "framer-motion";
 import logo from "../public/logo.svg";
-import CartModal from "./NavBarModal";
+import NavBarModal from "./NavBarModal";
 import Link from "next/link";
 export default function Navbar() {
   // const [darkMode, setDarkMode] = useState(false);
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className="sticky top-0 z-50" id="navBar">
       <AnimatePresence>
-        {isOpen && <CartModal setOpen={setOpen} isOpen={isOpen} />}
+        {isOpen && <NavBarModal setOpen={setOpen} isOpen={isOpen} />}
       </AnimatePresence>
       <motion.div
         initial={{ y: -100 }}

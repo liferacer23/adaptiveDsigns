@@ -36,78 +36,92 @@ export default function Team() {
       </div>
       <div className="xs:items-center sm:items-center relative h-[50%] bg-secondary w-full flex lg:flex-row sm:flex-col xs:flex-col lg:items-center xs:justify-center sm:justify-center lg:justify-around xs:px-2 sm:px-2 sm:py-4 xs:py-4 xs:gap-4 sm:gap-4 lg:px-10">
         <div className="flex flex-col  w-72 lg:h-[28rem] xs:h-full sm:h-full shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
-          <div className="flex h-[28rem] w-[100%]">
-            <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
+          <div className="flex h-[25rem] w-[100%]">
+            <div className="flex flex-col h-[100%] justify-end w-10 items-center gap-5 pb-5 ">
               <AiOutlineInstagram
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
               <FaLinkedinIn
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
               <GrFacebookOption
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
               <FaTelegramPlane
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
             </div>
             <div className="w-full relative h-full">
               <Image src={person} alt="person 1" fill objectFit="cover" />
             </div>
           </div>
-          <div className="w-[100%] h-12 text-white ml-7">
+          <div className="w-[100%] h-12 text-white ml-9 mt-2">
             <span className="text-sm font-bold">DAWIT ABEBE</span>
 
             <p className="text-[10px] font-bold"> ARCHITECT MANAGING PARTNER</p>
           </div>
         </div>
-        {/* <div className="flex flex-col  w-72 h-[28rem] shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
-          <div className="flex h-[25rem] w-[100%]">
-            <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
-              <AiOutlineInstagram
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
-              />
-              <FaLinkedinIn
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
-              />
-              <GrFacebookOption
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
-              />
-              <FaTelegramPlane
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
-              />
-            </div>
-            <div className="w-full relative h-full">
-              <Image src={person} alt="person 1" fill objectFit="cover" />
-            </div>
-          </div>
-          <div className="w-[100%] h-12 text-white ml-7">
-            <span className="text-sm font-bold">DAWIT ABEBE</span>
-            <span className="text-[10px] font-bold">ARCHITECT</span>
-            <span className="text-[10px] font-bold">MANAGING PARTNER</span>
-          </div>
-        </div> */}
         <div className="flex flex-col  w-72 lg:h-[28rem] xs:h-full sm:h-full shadow-xl lg:-mt-72 sm:mt-0 xs:mt-0">
           <div className="flex h-[25rem] w-[100%]">
-            <div className="flex flex-col h-[100%] justify-end w-8 items-center gap-5 pb-5">
+            <div className="flex flex-col h-[100%] justify-end w-10 items-center gap-5 pb-5 ">
               <AiOutlineInstagram
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
               <FaLinkedinIn
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
               <GrFacebookOption
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
               <FaTelegramPlane
-                style={{ fontSize: "1.5rem", color: "#fff", cursor: "pointer" }}
+                style={{
+                  fontSize: "1.7rem",
+                  color: "#fff",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                }}
               />
             </div>
             <div className="w-full relative h-full">
               <Image src={person} alt="person 1" fill objectFit="cover" />
             </div>
           </div>
-          <div className="w-[100%] h-12 text-white ml-7">
+          <div className="w-[100%] h-12 text-white ml-9 mt-2">
             <span className="text-sm font-bold">DAWIT ABEBE</span>
 
             <p className="text-[10px] font-bold"> ARCHITECT MANAGING PARTNER</p>
