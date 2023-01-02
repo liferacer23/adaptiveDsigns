@@ -28,8 +28,8 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <div className="flex lg:flex-row sm:flex-col xs:flex-col px-10 items-center justify-evenly">
-        <div className="flex flex-col w-[fit-content]">
+      <div className="flex lg:flex-row sm:flex-col xs:flex-col items-center justify-evenly">
+        <div className="flex flex-col w-[fit-content] px-10">
           <div className="w-full flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Web</span>
             <span className="text-xs mt-2">www.adaptivedesignset.com</span>
@@ -62,7 +62,7 @@ export default function ContactUs() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="flex flex-col items-center justify-center w-[fit-content]">
+        <div className="flex flex-col items-center justify-center w-[fit-content] px-10">
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Name</span>
             <Input
