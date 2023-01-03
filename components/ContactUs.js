@@ -52,15 +52,7 @@ export default function ContactUs() {
             <span className=" text-xs mt-2">Addis Ababa, Ethiopia</span>
           </div>
         </div>
-        <div className="block h-[30rem] w-full py-4 px-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.6990753168006!2d38.7825746!3d8.9998128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85593d97581f%3A0xb8972362824c1035!2sADAPTIVE%20INTERIOR%20DESIGNS!5e0!3m2!1sen!2set!4v1672681639513!5m2!1sen!2set"
-            width="100%"
-            height="100%"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+
         <div className="flex flex-col items-center justify-center w-[fit-content] px-10">
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Name</span>
@@ -86,6 +78,15 @@ export default function ContactUs() {
               Send
             </Button>
           </div>
+        </div>
+        <div className="block h-[30rem] w-full py-4 px-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.6990753168006!2d38.7825746!3d8.9998128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85593d97581f%3A0xb8972362824c1035!2sADAPTIVE%20INTERIOR%20DESIGNS!5e0!3m2!1sen!2set!4v1672681639513!5m2!1sen!2set"
+            width="100%"
+            height="100%"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </motion.div>

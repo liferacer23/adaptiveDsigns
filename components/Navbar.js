@@ -58,12 +58,12 @@ export default function Navbar() {
           </Link>
           <Link href="#AboutUs">
             <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
-              ABOUT
+              ABOUT US
             </div>
           </Link>
-          <Link href="#Team">
-            <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
-              TEAM
+          <Link href="#BeforeAndAfter">
+            <div className="flex w-26 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
+              BEFORE & AFTER
             </div>
           </Link>
           <Link href="#Clients">

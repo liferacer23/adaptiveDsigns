@@ -6,13 +6,17 @@ export default function HeaderComponent() {
   return (
     <motion.div
       id="Header"
-      className="sm:h-12 xs:h-12 lg:h-12 w-full flex items-end text-5xl px-8 pb-2 relative py-12"
+      className="sm:h-32 xs:h-32 lg:h-[7rem] w-full flex items-end text-5xl px-8 pb-2 relative py-12"
     >
-      <div className="sm:w-full xs:w-full flex  2xl:gap-10 items-end md:w-[100%] lg:w-[90%] 2xl:w-[100%] relative ">
-        {/* <div className="md:w-[30%] md:h-[30%] xs:h-[90%] sm:h-[100%]  xs:w-[40%] sm:w-[40%] lg:pl-10">
+      <div className="flex justify-between  2xl:gap-10 items-end md:w-[80%] lg:w-[90%] 2xl:w-[95%] relative ">
+        <h1 className="lg:text-[45px] font-bold xs:text-[30px] sm:text-[30px] sm:text-left xs:text-left">
+          {" "}
+          ADAPT ELEVATE DELIVER
+        </h1>
+        <div className="md:w-[30%] md:h-[30%] xs:h-[90%] sm:h-[100%]  xs:w-[100%] sm:w-[100%] lg:pl-10">
           {" "}
           <Image src={dots} alt="dots image" priority />
-        </div> */}
+        </div>
         <motion.span
           initial={{ y: 500 }}
           animate={{ y: 0 }}
@@ -22,13 +26,16 @@ export default function HeaderComponent() {
           CONTACT US
         </motion.span>
       </div>
-      <h2
-        className="lg:w-[50%] md:w-[40%] xs:w-[60%] sm:w-[60%] flex items-center justify-start absolute sm:-bottom-14 xs:-bottom-14 lg:-bottom-13 text-left left-0 h-[fit-content] sm:text-[21px] xs:text-[21px] lg:text-[28px] z-30 font-bold text-white
-      bg-gradient-to-r from-primary px-4 py-4
+      {/* <h2
+        className="lg:w-[30%] xs:w-[60%] sm:w-[60%] absolute sm:-bottom-12 xs:-bottom-12 lg:-bottom-16 text-left left-0 h-[fit-content] sm:text-[15px] xs:text-[15px] lg:text-[25px] z-30 font-bold text-white
+      bg-gradient-to-r from-primary px-4 py-2
       "
       >
-        ADAPT &#183; ELEVATE &#183; DELIVER
-      </h2>
+        YOU ARE IN GOOD HANDS WITH US
+      </h2> */}
     </motion.div>
   );
 }
+
+// html middle dot tag
+// <span className="text-2xl text-gray-500">•</span>

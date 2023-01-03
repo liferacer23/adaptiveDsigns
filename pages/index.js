@@ -7,7 +7,7 @@ import Portfolio from "../components/Portfolio";
 import AboutUs from "../components/AboutUs";
 import Philosophy from "../components/Philosophy";
 import HowWeWork from "../components/HowWeWork";
-import Team from "../components/Team";
+import BeforeAndAfter from "../components/BeforeAndAfter";
 import Clients from "../components/Clients";
 import Blog from "../components/Blog";
 import ContactUs from "../components/ContactUs";
@@ -44,7 +44,7 @@ export default function Home() {
         <AboutUs />
         <Philosophy />
         <HowWeWork />
-        <Team />
+        <BeforeAndAfter />
         <Clients />
         <Blog />
         <ContactUs />
