@@ -56,12 +56,8 @@ export default function Slider() {
             }}
           ></Button>
         </div>
-        <h2 className="absolute bottom-16 sm:text-[10px] xs:text-[10px] lg:text-[18px] z-20 w-full bg-primaryTransparent lg:h-14 xs:h-[fit-content] sm:h-[fit-content] text-white text-center xs:px-10 sm:px-10 lg:px-60">
-          ELEVATING THE RAW AESTHETIC FUNCTIONAL ESSENCE OF TRADITIONAL
-          ETHIOPIAN DESIGN BY REINTERPRETING IT IN A CONTEMPORARY MANNER
-        </h2>
         <Carousel autoplay ref={carouselRef}>
-          <div className="lg:h-[25rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image1}
               alt="image1"
@@ -70,7 +66,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="lg:h-[25rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image2}
               alt="image2"
@@ -79,7 +75,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="lg:h-[25rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image3}
               alt="image3"
@@ -88,7 +84,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="lg:h-[25rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image4}
               alt="image4"
