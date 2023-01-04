@@ -62,7 +62,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="#BeforeAndAfter">
-            <div className="flex w-26 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
+            <div className="flex w-32 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
               BEFORE & AFTER
             </div>
           </Link>
