@@ -7,7 +7,7 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
-
+import ComparisonSlider from "./ComparisonSlider";
 export default function Team() {
   const { ref, inView } = useInView({});
   return (
@@ -26,14 +26,46 @@ export default function Team() {
           <span className="font-bold text-md">UPDATES</span>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center">
-        <div className="lg:w-[40rem] xs:w-[100%] sm:w-[100%] h-[40rem] my-4">
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src={img1.src} alt="Image one" />}
-            itemTwo={<ReactCompareSliderImage src={img2.src} alt="Image two" />}
-          />
-        </div>
-      </div>
+      <ComparisonSlider
+        slides={[
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            key={1}
+            className="w-full flex items-center justify-center m-auto"
+          >
+            <div className="lg:w-[40rem] xl:w-[40rem] 2xl:w-[45rem] xs:w-[100%] sm:w-[100%] lg:h-[40rem] xl:h-[40rem] 2xl:h-[45rem] sm:h-[30rem] xs:h-[28rem] flex items-center justify-center m-auto">
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage src={img1.src} alt="Image one" />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage src={img2.src} alt="Image two" />
+                }
+              />
+            </div>
+          </motion.div>,
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            key={2}
+            className="w-full flex items-center justify-center m-auto"
+          >
+            <div className="lg:w-[40rem] xl:w-[40rem] 2xl:w-[45rem] xs:w-[100%] sm:w-[100%] lg:h-[40rem] xl:h-[40rem] 2xl:h-[45rem] sm:h-[30rem] xs:h-[28rem] flex items-center justify-center m-auto">
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage src={img1.src} alt="Image one" />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage src={img2.src} alt="Image two" />
+                }
+              />
+            </div>
+          </motion.div>,
+        ]}
+      />
     </motion.div>
   );
 }

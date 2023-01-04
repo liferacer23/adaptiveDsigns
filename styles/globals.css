@@ -111,3 +111,24 @@
   display: block;
   position: relative;
 }
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.slider__arrow--left {
+  left: 1em;
+}

@@ -51,7 +51,7 @@ export default function Portfolio({ openModal, setOpenModal }) {
               className="relative h-full lg:w-[50%] xs:w-[100%] sm:w-[100%]"
             >
               <div className="p-4 flex items-center justify-center absolute h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
-                <span className="text-xl">Portfolio 1</span>
+                <span className="text-3xl font-bold">Architecture</span>
               </div>
               <div className=" h-full w-full bg-[url('../public/cafe.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
             </div>
@@ -69,7 +69,9 @@ export default function Portfolio({ openModal, setOpenModal }) {
               >
                 <div className="relative h-full w-[100%] flex justify-between items-center">
                   <div className=" absolute p-4 flex items-center justify-center h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000 text-center">
-                    <span className="text-xl">Portfolio 2</span>
+                    <span className="text-3xl font-bold">
+                      Product & Furniture
+                    </span>
                   </div>
                   <div className=" h-full w-[50%]  bg-[url('../public/coffee.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
                   <div className=" h-full w-[50%]  bg-[url('../public/chair.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
@@ -87,7 +89,7 @@ export default function Portfolio({ openModal, setOpenModal }) {
                 }
               >
                 <div className=" absolute p-4 flex items-center justify-center h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
-                  <span className="text-xl">Portfolio 4</span>
+                  <span className="text-3xl font-bold">Interior Design</span>
                 </div>
                 <div className=" h-full w-full  bg-[url('../public/conference.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
               </div>

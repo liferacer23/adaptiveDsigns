@@ -57,7 +57,7 @@ export default function Slider() {
           ></Button>
         </div>
         <Carousel autoplay ref={carouselRef}>
-          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="2xl:h-[40rem] lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image1}
               alt="image1"
@@ -66,7 +66,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="2xl:h-[40rem] lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image2}
               alt="image2"
@@ -75,7 +75,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="2xl:h-[40rem] lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image3}
               alt="image3"
@@ -84,7 +84,7 @@ export default function Slider() {
               fill
             />
           </div>
-          <div className="lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
+          <div className="2xl:h-[40rem] lg:h-[35rem] sm:h-[40vh] xs:h-[40vh] w-[100vw] relative">
             <Image
               src={image4}
               alt="image4"
