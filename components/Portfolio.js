@@ -42,7 +42,7 @@ export default function Portfolio({ openModal, setOpenModal }) {
             <div
               onClick={() =>
                 handleModal({
-                  title: "Portfolio 1",
+                  title: "Architecture",
                   content: "Cafe",
                   images: ["/cafe.webp"],
                   multiple: false,
@@ -60,8 +60,8 @@ export default function Portfolio({ openModal, setOpenModal }) {
                 className="h-[50%] w-full "
                 onClick={() =>
                   handleModal({
-                    title: "Portfolio 2",
-                    content: "Portfolio 2",
+                    title: "Product & Furniture",
+                    content: "Product & Furniture",
                     images: ["/coffee.webp", "/chair.webp"],
                     multiple: true,
                   })
@@ -81,8 +81,8 @@ export default function Portfolio({ openModal, setOpenModal }) {
                 className="relative h-[50%] w-full"
                 onClick={() =>
                   handleModal({
-                    title: "Portfolio 3",
-                    content: "Portfolio 3",
+                    title: "Interior Design",
+                    content: "Interior Design",
                     images: ["/conference.webp"],
                     multiple: false,
                   })

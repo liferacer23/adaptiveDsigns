@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
 import Image from "next/image";
+import ArchitectureModal from "./ArchitectureModal";
+import InteriorModal from "./InteriorModal";
+import ProductModal from "./ProductModal";
 export default function PortfolioModal({ open, setOpenModal, modalData }) {
   useEffect(() => {
     const handleScroll = (event) => {
@@ -29,44 +32,27 @@ export default function PortfolioModal({ open, setOpenModal, modalData }) {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="w-full h-full flex items-center flex-col m-auto p-4 bg-white rounded-lg shadow-xl
-      overflow-auto "
+        className="w-full h-full flex items-center flex-col m-auto bg-white shadow-xl
+      overflow-auto relative"
       >
-        <div className="w-full h-[fit-content] flex items-center justify-start">
+        <div className="w-full h-[fit-content] flex items-center justify-start absolute top-5 left-2">
           <button
             onClick={() => setOpenModal(false)}
             className="px-4 py-2 font-bold rounded-full focus:outline-none focus:shadow-outline"
           >
-            <BiArrowBack className="inline-block mr-2 text-2xl" color="#000" />{" "}
+            <BiArrowBack className="inline-block mr-2 text-2xl" color="#FFf" />{" "}
           </button>
         </div>
-        <h2 className="text-2xl font-bold mb-4">
-          {modalData.title && modalData.title}
-        </h2>
-        <p className="text-gray-700 mb-4">
-          {modalData.content && modalData.content}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          veritatis dolore tenetur corporis nulla! Eveniet eos voluptatibus
-          nihil a veniam vitae molestiae! Quam voluptates, fugiat doloremque
-          aspernatur cum esse nihil!
-        </p>
-        <div className="w-full flex flex-wrap p-2 items-center justify-center">
-          {modalData.images &&
-            modalData.images.map((image, index) => (
-              <Image
-                key={index}
-                src={image}
-                layout={`${
-                  modalData.multiple === true ? "fixed" : "responsive"
-                }`}
-                width={modalData.multiple === true ? 300 : 500}
-                height={modalData.multiple === true ? 300 : 500}
-                alt="Portfolio image"
-              />
-            ))}
-        </div>
+
+        {modalData.title === "Architecture" && (
+          <ArchitectureModal modalData={modalData} />
+        )}
+        {modalData.title === "Interior Design" && (
+          <InteriorModal modalData={modalData} />
+        )}
+        {modalData.title === "Product & Furniture" && (
+          <ProductModal modalData={modalData} />
+        )}
       </motion.div>
     </motion.div>
   );

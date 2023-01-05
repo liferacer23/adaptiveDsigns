@@ -86,9 +86,9 @@ export default function CartModal({ setOpen, isOpen }) {
                 onClick={() => {
                   setOpen(!isOpen);
                 }}
-                className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm"
+                className="flex w-36 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm"
               >
-                Before And After
+                BEFORE AND AFTER
               </div>
             </Link>
             <Link href="#Clients">
