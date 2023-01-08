@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
-import Image from "next/image";
 import ArchitectureModal from "./ArchitectureModal";
 import InteriorModal from "./InteriorModal";
 import ProductModal from "./ProductModal";
@@ -33,9 +32,9 @@ export default function PortfolioModal({ open, setOpenModal, modalData }) {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
         className="w-full h-full flex items-center flex-col m-auto bg-white shadow-xl
-      overflow-auto relative"
+       relative overflow-x-hidden overflow-y-auto"
       >
-        <div className="w-full h-[fit-content] flex items-center justify-start absolute top-5 left-2">
+        <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2">
           <button
             onClick={() => setOpenModal(false)}
             className="px-4 py-2 font-bold rounded-full focus:outline-none focus:shadow-outline"

@@ -10,7 +10,7 @@ export default function InteriorModal() {
   ];
   return (
     <div>
-      <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[fit-content] pb-4 lg:px-10">
+      <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[fit-content] pb-4 lg:px-10 w-fit">
         <div className="flex gap-5 items-start justify-center xs:w-full  sm:w-full lg:w-[40%] ">
           <div className="flex items-center justify-center p-4">
             <span className="text-[3rem]">Architectural Projects</span>
