@@ -9,10 +9,10 @@ export default function AutoSlider({ images }) {
   const carouselRef = useRef(null);
 
   var settings = {
-    className: "center",
+    className: "center w-[100vw]",
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
+
     slidesToShow: images && images.length > 3 ? 3 : images && images.length,
     speed: 500,
     dots: true,
