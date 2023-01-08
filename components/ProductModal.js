@@ -3,6 +3,29 @@ import Image from "next/image";
 import quots from "../public/quots.svg";
 import AutoSlider from "./AutoSlider";
 export default function InteriorModal() {
+  const images = [
+    "/Portfolio/Product/1.webp",
+    "/Portfolio/Product/2.webp",
+    "/Portfolio/Product/3.webp",
+    "/Portfolio/Product/4.webp",
+    "/Portfolio/Product/5.webp",
+    "/Portfolio/Product/6.webp",
+    "/Portfolio/Product/7.webp",
+    "/Portfolio/Product/8.webp",
+    "/Portfolio/Product/9.webp",
+    "/Portfolio/Product/10.webp",
+    "/Portfolio/Product/11.webp",
+    "/Portfolio/Product/12.webp",
+    "/Portfolio/Product/13.webp",
+    "/Portfolio/Product/14.webp",
+    "/Portfolio/Product/15.webp",
+    "/Portfolio/Product/16.webp",
+    "/Portfolio/Product/17.webp",
+    "/Portfolio/Product/18.webp",
+    "/Portfolio/Product/19.webp",
+    "/Portfolio/Product/20.webp",
+    "/Portfolio/Product/21.jpg",
+  ];
   return (
     <div>
       <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[fit-content] pb-4 lg:px-10">
@@ -30,7 +53,7 @@ export default function InteriorModal() {
           </div>
         </div>
       </div>
-      <AutoSlider />
+      <AutoSlider images={images} />
     </div>
   );
 }

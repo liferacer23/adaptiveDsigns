@@ -10,6 +10,7 @@ export default function AutoSlider({ images }) {
 
   var settings = {
     className: "center w-[100vw]",
+    autoplay: true,
     centerMode: true,
     infinite: true,
 
@@ -47,6 +48,7 @@ export default function AutoSlider({ images }) {
           centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
@@ -76,42 +78,46 @@ export default function AutoSlider({ images }) {
         </Slider>
       </div>
       {images && images.length > 3 && (
-        <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7 top-0">
-          <Button
-            style={{ border: "none" }}
-            icon={
-              <LeftOutlined
-                style={{
-                  fontSize: "1rem",
-                  color: "#fff",
-                  background: "rgba(98, 98, 98, 0.5)",
-                  borderRadius: "50%",
-                  padding: "15px",
-                }}
-              />
-            }
-            onClick={() => {
-              carouselRef.current.slickPrev();
-            }}
-          ></Button>
-          <Button
-            style={{ border: "none" }}
-            icon={
-              <RightOutlined
-                style={{
-                  fontSize: "1rem",
-                  color: "#fff",
-                  background: "rgba(98, 98, 98, 0.5)",
-                  borderRadius: "50%",
-                  padding: "15px",
-                }}
-              />
-            }
-            onClick={() => {
-              carouselRef.current.slickNext();
-            }}
-          ></Button>
-        </div>
+        <>
+          <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 left-5">
+            <Button
+              style={{ border: "none" }}
+              icon={
+                <LeftOutlined
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "#fff",
+                    background: "rgba(98, 98, 98, 0.5)",
+                    borderRadius: "50%",
+                    padding: "15px",
+                  }}
+                />
+              }
+              onClick={() => {
+                carouselRef.current.slickPrev();
+              }}
+            ></Button>
+          </div>
+          <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 right-5">
+            <Button
+              style={{ border: "none" }}
+              icon={
+                <RightOutlined
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "#fff",
+                    background: "rgba(98, 98, 98, 0.5)",
+                    borderRadius: "50%",
+                    padding: "15px",
+                  }}
+                />
+              }
+              onClick={() => {
+                carouselRef.current.slickNext();
+              }}
+            ></Button>
+          </div>
+        </>
       )}
     </div>
   );
