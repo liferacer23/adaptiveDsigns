@@ -11,7 +11,7 @@ export default function InteriorModal() {
             <span className="text-[3rem]">Product & Furniture</span>
           </div>
         </div>
-        <div className=" flex gap-5 items-start justify-center xs:w-full  sm:w-full lg:w-[40%]  mt-5 p-2">
+        <div className=" flex gap-5 items-start justify-center xs:w-full  sm:w-full lg:w-[40%]  mt-5 p-2 ">
           <Image
             src={quots}
             alt="quots"

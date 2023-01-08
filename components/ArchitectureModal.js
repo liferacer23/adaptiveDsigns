@@ -2,7 +2,12 @@ import React from "react";
 import Image from "next/image";
 import quots from "../public/quots.svg";
 import AutoSlider from "./AutoSlider";
+
 export default function InteriorModal() {
+  const images = [
+    "/Portfolio/Architecture/HotelKal/1.webp",
+    "/Portfolio/Architecture/Rec/1.webp",
+  ];
   return (
     <div>
       <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[fit-content] pb-4 lg:px-10">
@@ -30,7 +35,7 @@ export default function InteriorModal() {
           </div>
         </div>
       </div>
-      <AutoSlider />
+      <AutoSlider images={images} />
     </div>
   );
 }
