@@ -85,7 +85,7 @@ export default function AutoSlider({ images }) {
               icon={
                 <LeftOutlined
                   style={{
-                    fontSize: "1.5rem",
+                    fontSize: "1.2rem",
                     color: "#fff",
                     background: "rgba(98, 98, 98, 0.5)",
                     borderRadius: "50%",
@@ -104,7 +104,7 @@ export default function AutoSlider({ images }) {
               icon={
                 <RightOutlined
                   style={{
-                    fontSize: "1.5rem",
+                    fontSize: "1.2rem",
                     color: "#fff",
                     background: "rgba(98, 98, 98, 0.5)",
                     borderRadius: "50%",
