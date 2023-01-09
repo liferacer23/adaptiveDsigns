@@ -66,7 +66,7 @@ export default function AutoSlider({ images }) {
               >
                 <div className="bg-white h-full w-full relative  shadow-2xl">
                   <Image
-                    className="p-2 xs:px-1 sm:px-1 lg:mx-2 hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+                    className="p-2 xs:px-1 sm:px-1 lg:mx-2 lg:hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
                     src={image}
                     alt="image"
                     layout="fill"
