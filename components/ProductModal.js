@@ -4,7 +4,6 @@ import quots from "../public/quots.svg";
 import AutoSlider from "./AutoSlider";
 export default function InteriorModal() {
   const images = [
-    "/Portfolio/Product/1.webp",
     "/Portfolio/Product/2.webp",
     "/Portfolio/Product/3.webp",
     "/Portfolio/Product/4.webp",
