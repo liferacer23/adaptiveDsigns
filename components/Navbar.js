@@ -76,7 +76,7 @@ export default function Navbar() {
               BLOG
             </div>
           </Link>
-          <Link href="#ContactUs">
+          <Link href="#Contact">
             <div className="flex w-24 h-10 justify-center items-end pb-1 cursor-pointer hover:border-b-4 transition-all duration-100 text-sm text-white">
               CONTACT
             </div>

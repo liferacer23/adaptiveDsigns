@@ -17,14 +17,15 @@ export default function HeaderComponent() {
           {" "}
           <Image src={dots} alt="dots image" priority />
         </div>
-        <motion.span
+        <motion.a
+          href="tel:+251-924307368"
           initial={{ y: 500 }}
           animate={{ y: 0 }}
           transition={{ duration: 1 }}
           className="w-26 rounded-full shadow-xl absolute -bottom-8 xs:right-1 sm:right-1 lg:right-10 h-12 bg-white px-5 lg:py-3 xs:py-4 sm:py-4 lg:text-[30px] font-bold xs:text-[15px] sm:text-[15px] text-center z-40"
         >
           CONTACT US
-        </motion.span>
+        </motion.a>
       </div>
       {/* <h2
         className="lg:w-[30%] xs:w-[60%] sm:w-[60%] absolute sm:-bottom-12 xs:-bottom-12 lg:-bottom-16 text-left left-0 h-[fit-content] sm:text-[15px] xs:text-[15px] lg:text-[25px] z-30 font-bold text-white

@@ -37,7 +37,7 @@ export default function Portfolio({ openModal, setOpenModal }) {
             <Image src={dots} alt="dots image" priority />
           </div>
         </div>
-        <div className="2xl:h-[40rem] lg:h-[27rem] xs:h-[47rem] sm:h-[47rem] xs:flex-col sm:flex-col lg:flex-row flex items-center justify-center lg:w-[60rem] xs:w-[23rem] sm:w-[23rem]">
+        <div className="2xl:h-[40rem] lg:h-[27rem] xs:h-[47rem] sm:h-[47rem] xs:flex-col sm:flex-col lg:flex-row flex items-center justify-center xl:w-[90rem] lg:w-[60rem] xs:w-[23rem] sm:w-[23rem]">
           <div className="flex lg:flex-row xs:flex-col sm:flex-col lg:w-[90%] xs:w-[100%] sm:w-[100%] h-full bg-transparent">
             <div
               onClick={() =>
