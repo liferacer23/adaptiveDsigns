@@ -36,7 +36,7 @@ export default function Navbar() {
               />
             </div>
           </Link>
-          <span className="text-white text-xl h-full w-full flex items-center">
+          <span className="text-white xs:text-sm sm:text-sm lg:text-xl h-full w-full flex items-center">
             ADAPTIVE DESIGNS
           </span>
         </div>
