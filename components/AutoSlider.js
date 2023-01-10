@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import Button from "antd/lib/button";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import ItemModal from "./ItemModal";
+import { AnimatePresence } from "framer-motion";
 export default function AutoSlider({ images }) {
+  const [itemModal, setModalState] = useState(false);
   const carouselRef = useRef(null);
 
   var settings = {
@@ -57,16 +60,22 @@ export default function AutoSlider({ images }) {
     <div className="relative">
       <div className="w-[100vw] h-[fit-content] ">
         {" "}
+        <AnimatePresence>
+          {itemModal ? (
+            <ItemModal setModalState={setModalState} itemModal={itemModal} />
+          ) : null}
+        </AnimatePresence>
         <Slider {...settings} ref={carouselRef}>
           {images &&
             images.map((image, index) => (
               <div
+                onClick={() => setModalState(true)}
                 key={index}
                 className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"
               >
                 <div className="bg-white h-full w-full relative  shadow-2xl">
                   <Image
-                    className="p-2 xs:px-1 sm:px-1 lg:mx-2 lg:hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+                    className="p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer"
                     src={image}
                     alt="image"
                     layout="fill"

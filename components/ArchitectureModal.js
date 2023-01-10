@@ -6,7 +6,10 @@ import AutoSlider from "./AutoSlider";
 export default function InteriorModal() {
   const images = [
     "/Portfolio/Architecture/HotelKal/1.webp",
+    "/Portfolio/Architecture/HotelKal/2.webp",
+    "/Portfolio/Architecture/HotelKal/3.webp",
     "/Portfolio/Architecture/Rec/1.webp",
+    "/Portfolio/Architecture/Rec/2.webp",
   ];
   return (
     <div>
