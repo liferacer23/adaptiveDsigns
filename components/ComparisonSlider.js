@@ -29,7 +29,7 @@ function Carousel({ slides }) {
       className="w-full"
     >
       {slides[currentIndex]}
-      <div className="w-full flex justify-center items-center lg:mt-20 gap-20">
+      <div className="w-full flex justify-center items-center lg:mt-10 gap-20">
         <button className="cursor-pointer" onClick={goToPrevSlide}>
           <BsChevronLeft className="text-3xl" />
         </button>

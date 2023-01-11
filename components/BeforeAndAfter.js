@@ -1,7 +1,13 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import img1 from "../public/cafe.webp";
-import img2 from "../public/chair.webp";
+import beforeExterior from "../public/BeforeAndAfter/1/before exterior.webp";
+import afterExterior from "../public/BeforeAndAfter/1/after exterior.webp";
+import beforeInterior from "../public/BeforeAndAfter/1/before interior.webp";
+import afterInterior from "../public/BeforeAndAfter/1/after interior.webp";
+import beforeInterior1 from "../public/BeforeAndAfter/2/beforeInterior1.webp";
+import afterInterior2 from "../public/BeforeAndAfter/2/afterInterior1.webp";
+import beforeInterior2 from "../public/BeforeAndAfter/2/beforeInterior2.webp";
+import afterInterior1 from "../public/BeforeAndAfter/2/afterInterior2.webp";
 import { motion } from "framer-motion";
 import {
   ReactCompareSlider,
@@ -35,13 +41,19 @@ export default function Team() {
             key={1}
             className="w-full flex items-center justify-center m-auto"
           >
-            <div className="lg:w-[35rem] xl:w-[35rem] 2xl:w-[45rem] xs:w-[100%] sm:w-[100%] lg:h-[35rem] xl:h-[35rem] 2xl:h-[45rem] sm:h-[30rem] xs:h-[28rem] flex items-center justify-center m-auto">
+            <div className=" flex items-center justify-center m-auto w-[65rem] h-[45rem]">
               <ReactCompareSlider
                 itemOne={
-                  <ReactCompareSliderImage src={img1.src} alt="Image one" />
+                  <ReactCompareSliderImage
+                    src={beforeExterior.src}
+                    alt="Image one"
+                  />
                 }
                 itemTwo={
-                  <ReactCompareSliderImage src={img2.src} alt="Image two" />
+                  <ReactCompareSliderImage
+                    src={afterExterior.src}
+                    alt="Image two"
+                  />
                 }
               />
             </div>
@@ -53,13 +65,67 @@ export default function Team() {
             key={2}
             className="w-full flex items-center justify-center m-auto"
           >
-            <div className="lg:w-[35rem] xl:w-[35rem] 2xl:w-[45rem] xs:w-[100%] sm:w-[100%] lg:h-[35rem] xl:h-[35rem] 2xl:h-[45rem] sm:h-[30rem] xs:h-[28rem] flex items-center justify-center m-auto">
+            <div className=" flex items-center justify-center m-auto w-[65rem] h-[45rem]">
               <ReactCompareSlider
                 itemOne={
-                  <ReactCompareSliderImage src={img1.src} alt="Image one" />
+                  <ReactCompareSliderImage
+                    src={beforeInterior.src}
+                    alt="Image one"
+                  />
                 }
                 itemTwo={
-                  <ReactCompareSliderImage src={img2.src} alt="Image two" />
+                  <ReactCompareSliderImage
+                    src={afterInterior.src}
+                    alt="Image two"
+                  />
+                }
+              />
+            </div>
+          </motion.div>,
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            key={2}
+            className="w-full flex items-center justify-center m-auto"
+          >
+            <div className=" flex items-center justify-center m-auto w-[45rem] h-[fit-content]">
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src={beforeInterior1.src}
+                    alt="Image one"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src={afterInterior1.src}
+                    alt="Image two"
+                  />
+                }
+              />
+            </div>
+          </motion.div>,
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            key={2}
+            className="w-full flex items-center justify-center m-auto"
+          >
+            <div className=" flex items-center justify-center m-auto w-[65rem] h-[45rem]">
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src={beforeInterior2.src}
+                    alt="Image one"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src={afterInterior2.src}
+                    alt="Image two"
+                  />
                 }
               />
             </div>
