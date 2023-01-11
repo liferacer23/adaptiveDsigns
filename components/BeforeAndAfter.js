@@ -41,7 +41,7 @@ export default function Team() {
             key={1}
             className="w-full flex items-center justify-center m-auto"
           >
-            <div className=" flex items-center justify-center m-auto w-[65rem] h-[45rem]">
+            <div className=" flex items-center justify-center m-auto w-[65rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
               <ReactCompareSlider
                 itemOne={
                   <ReactCompareSliderImage
@@ -65,7 +65,7 @@ export default function Team() {
             key={2}
             className="w-full flex items-center justify-center m-auto"
           >
-            <div className=" flex items-center justify-center m-auto w-[65rem] h-[45rem]">
+            <div className=" flex items-center justify-center m-auto w-[65rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
               <ReactCompareSlider
                 itemOne={
                   <ReactCompareSliderImage
@@ -89,7 +89,7 @@ export default function Team() {
             key={2}
             className="w-full flex items-center justify-center m-auto"
           >
-            <div className=" flex items-center justify-center m-auto w-[45rem] h-[fit-content]">
+            <div className=" flex items-center justify-center m-auto w-[65rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
               <ReactCompareSlider
                 itemOne={
                   <ReactCompareSliderImage
@@ -113,7 +113,7 @@ export default function Team() {
             key={2}
             className="w-full flex items-center justify-center m-auto"
           >
-            <div className=" flex items-center justify-center m-auto w-[65rem] h-[45rem]">
+            <div className=" flex items-center justify-center m-auto w-[65rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
               <ReactCompareSlider
                 itemOne={
                   <ReactCompareSliderImage
