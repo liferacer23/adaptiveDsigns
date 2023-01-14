@@ -9,8 +9,20 @@ import ItemModal from "./ItemModal";
 import { AnimatePresence } from "framer-motion";
 export default function AutoSlider({ images }) {
   const [itemModal, setModalState] = useState(false);
+  const [modalData, setModalData] = useState({
+    image: "",
+    title: "",
+    description: "",
+  });
   const carouselRef = useRef(null);
-
+  const handleModal = (image, title, description) => {
+    setModalData({
+      image: image,
+      title: title,
+      description: description,
+    });
+    setModalState(true);
+  };
   var settings = {
     className: "center w-[100vw]",
     autoplay: true,
@@ -62,14 +74,18 @@ export default function AutoSlider({ images }) {
         {" "}
         <AnimatePresence>
           {itemModal ? (
-            <ItemModal setModalState={setModalState} itemModal={itemModal} />
+            <ItemModal
+              setModalState={setModalState}
+              itemModal={itemModal}
+              modalData={modalData}
+            />
           ) : null}
         </AnimatePresence>
         <Slider {...settings} ref={carouselRef}>
           {images &&
             images.map((image, index) => (
               <div
-                onClick={() => setModalState(true)}
+                onClick={() => handleModal(image, "title", "description")}
                 key={index}
                 className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"
               >
