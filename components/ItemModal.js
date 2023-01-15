@@ -5,9 +5,8 @@ import Image from "next/image";
 export default function ItemModal({ setModalState, itemModal, modalData }) {
   const handleModal = () => {
     setModalState(!itemModal);
-    console.log(itemModal);
-    console.log(setModalState);
   };
+
   return (
     <>
       <motion.div
@@ -15,7 +14,7 @@ export default function ItemModal({ setModalState, itemModal, modalData }) {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         exit={{ x: 2000, opacity: 0 }}
-        className="fixed top-0 w-[100vw] h-[100vh] bg-gray-500 bg-opacity-75 z-50
+        className="fixed top-0 w-[100vw] h-[100vh] bg-gray-500 bg-opacity-75 z-50 overflow-auto
       "
       >
         <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[10rem] pb-4 lg:px-10">
