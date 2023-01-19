@@ -69,12 +69,10 @@ The wall cladding reflected the modern look through the use of shiny UV marble s
         "/Portfolio/Interior/Office/3/3.webp",
         "/Portfolio/Interior/Office/3/4.webp",
         "/Portfolio/Interior/Office/3/5.webp",
-        "/Portfolio/Interior/Office/3/6.webp",
+
         "/Portfolio/Interior/Office/3/7.webp",
         "/Portfolio/Interior/Office/3/8.webp",
         "/Portfolio/Interior/Office/3/9.webp",
-        "/Portfolio/Interior/Office/3/10.webp",
-        "/Portfolio/Interior/Office/3/11.webp",
         "/Portfolio/Interior/Office/3/12.webp",
         "/Portfolio/Interior/Office/3/13.webp",
       ],

@@ -27,7 +27,7 @@ export default function ItemModal({
         className="fixed top-0 w-[100vw] h-[100vh] bg-white z-50 overflow-auto
       "
       >
-        <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[10rem] pb-4 lg:px-10">
+        <div className="bg-secondary h-[fit-content] flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14  pb-4 lg:px-10">
           <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2">
             <button
               onClick={() => handleModal()}
@@ -53,7 +53,7 @@ export default function ItemModal({
             </div>
           </div>
         </motion.div>
-        <div className="bg-white px-5 py-8">
+        <div className="bg-white px-5 py-8 w-full">
           <p className="text-sm">{modalData.obj.description}</p>
         </div>
       </motion.div>

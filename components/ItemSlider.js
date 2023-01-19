@@ -5,6 +5,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import blurImageUrl from "blur-image-url";
 export default function ItemSlider({ images }) {
   const carouselRef = useRef(null);
   var settings = {
@@ -63,6 +64,8 @@ export default function ItemSlider({ images }) {
               >
                 <div className="bg-white h-full w-full relative  shadow-2xl">
                   <Image
+                    placeholder="blur"
+                    blurDataURL={image}
                     className="p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer"
                     src={image}
                     alt="image"

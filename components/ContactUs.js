@@ -84,7 +84,6 @@ export default function ContactUs() {
             src="https://maps.google.com/maps?q=ADAPTIVE%20INTERIOR%20DESIGNS,%20Namibia%20St,%20Addis%20Ababa%201000&t=&z=19&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
-            allowfullscreen=""
           ></iframe>
         </div>
       </div>
