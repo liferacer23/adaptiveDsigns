@@ -7,19 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import ItemModal from "./ItemModal";
 import { AnimatePresence } from "framer-motion";
-export default function AutoSlider({ images }) {
+export default function AutoSlider({ data }) {
   const [itemModal, setModalState] = useState(false);
-  const [modalData, setModalData] = useState({
-    image: "",
-    title: "",
-    description: "",
-  });
+  const [modalData, setModalData] = useState({});
   const carouselRef = useRef(null);
-  const handleModal = (image, title, description) => {
+  const handleModal = (obj) => {
     setModalData({
-      image: image,
-      title: title,
-      description: description,
+      obj,
     });
     setModalState(true);
   };
@@ -29,7 +23,7 @@ export default function AutoSlider({ images }) {
     centerMode: true,
     infinite: true,
 
-    slidesToShow: images && images.length > 3 ? 3 : images && images.length,
+    slidesToShow: data.length > 3 ? 3 : data.length === 1 ? 3 : data.length,
     speed: 500,
     dots: true,
 
@@ -42,9 +36,7 @@ export default function AutoSlider({ images }) {
           centerMode: true,
           infinite: true,
           centerPadding: "60px",
-          slidesToShow: 3,
-          slidesToShow:
-            images && images.length > 3 ? 3 : images && images.length,
+          slidesToShow: data.length > 3 ? 3 : data.length,
           dots: true,
         },
       },
@@ -69,12 +61,13 @@ export default function AutoSlider({ images }) {
     ],
   };
   return (
-    <div className="relative">
+    <div className="relative my-8">
       <div className="w-[100vw] h-[fit-content] ">
         {" "}
         <AnimatePresence>
           {itemModal ? (
             <ItemModal
+              setModalData={setModalData}
               setModalState={setModalState}
               itemModal={itemModal}
               modalData={modalData}
@@ -82,27 +75,45 @@ export default function AutoSlider({ images }) {
           ) : null}
         </AnimatePresence>
         <Slider {...settings} ref={carouselRef}>
-          {images &&
-            images.map((image, index) => (
-              <div
-                onClick={() => handleModal(image, "title", "description")}
-                key={index}
-                className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"
-              >
-                <div className="bg-white h-full w-full relative  shadow-2xl">
-                  <Image
-                    className="p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer"
-                    src={image}
-                    alt="image"
-                    layout="fill"
-                    objectFit="cover"
-                  />
+          {data && data.length > 1
+            ? data.map((obj, index) => (
+                <div
+                  onClick={() => handleModal(obj)}
+                  key={index}
+                  className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"
+                >
+                  <div className="bg-white h-full w-full relative  shadow-2xl">
+                    <Image
+                      fill
+                      className="p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer"
+                      src={obj.image[0]}
+                      alt="image"
+                      objectFit="cover"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            : data[0].image.map((image, index) => (
+                <div
+                  // onClick={() => handleModal(image)}
+                  key={index}
+                  className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"
+                >
+                  <div className="bg-white h-full w-full relative  shadow-2xl">
+                    <Image
+                      className="p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer"
+                      src={image}
+                      alt="image"
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
+                </div>
+              ))}
         </Slider>
       </div>
-      {images && images.length > 3 && (
+
+      {data.length > 3 && (
         <>
           <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 left-5">
             <Button

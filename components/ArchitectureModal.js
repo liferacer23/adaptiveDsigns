@@ -4,12 +4,26 @@ import quots from "../public/quots.svg";
 import AutoSlider from "./AutoSlider";
 
 export default function InteriorModal() {
-  const images = [
-    "/Portfolio/Architecture/HotelKal/1.webp",
-    "/Portfolio/Architecture/HotelKal/2.webp",
-    "/Portfolio/Architecture/HotelKal/3.webp",
-    "/Portfolio/Architecture/Rec/1.webp",
-    "/Portfolio/Architecture/Rec/2.webp",
+  const architecturalData = [
+    {
+      title: "Architectural Projects",
+      description: "",
+      image: [
+        "/Portfolio/Architecture/HotelKal/1.webp",
+        "/Portfolio/Architecture/HotelKal/2.webp",
+        "/Portfolio/Architecture/HotelKal/3.webp",
+        "/Portfolio/Architecture/HotelKal/4.webp",
+        "/Portfolio/Architecture/HotelKal/5.webp",
+      ],
+    },
+    {
+      title: "Architectural Projects",
+      description: "",
+      image: [
+        "/Portfolio/Architecture/Rec/1.webp",
+        "/Portfolio/Architecture/Rec/2.webp",
+      ],
+    },
   ];
   return (
     <div>
@@ -40,7 +54,7 @@ export default function InteriorModal() {
           </div>
         </div>
       </div>
-      <AutoSlider images={images} />
+      <AutoSlider data={architecturalData} />
     </div>
   );
 }

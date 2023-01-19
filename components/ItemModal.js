@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
-import Image from "next/image";
-export default function ItemModal({ setModalState, itemModal, modalData }) {
+import ItemSlider from "./ItemSlider";
+export default function ItemModal({
+  setModalState,
+  itemModal,
+  modalData,
+  setModalData,
+}) {
   const handleModal = () => {
     setModalState(!itemModal);
   };
 
+  useEffect(() => {
+    return () => {
+      setModalData(modalData);
+    };
+  }, []);
   return (
     <>
       <motion.div
@@ -14,7 +24,7 @@ export default function ItemModal({ setModalState, itemModal, modalData }) {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         exit={{ x: 2000, opacity: 0 }}
-        className="fixed top-0 w-[100vw] h-[100vh] bg-gray-500 bg-opacity-75 z-50 overflow-auto
+        className="fixed top-0 w-[100vw] h-[100vh] bg-white z-50 overflow-auto
       "
       >
         <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[10rem] pb-4 lg:px-10">
@@ -29,28 +39,23 @@ export default function ItemModal({ setModalState, itemModal, modalData }) {
               />{" "}
             </button>
           </div>
+          <h2 className="px-10 text-3xl py-10">{modalData.obj.title}</h2>
         </div>
         <motion.div
-          className="w-full h-full flex items-center flex-col m-auto bg-white
-       relative overflow-x-hidden overflow-y-auto"
+          className="w-full h-[fit-content] flex items-center flex-col   bg-white
+       relative overflow-hidden"
         >
-          <div className="w-full h-full">
-            <div className="w-full h-full flex flex-col items-start justify-start sm:px-2 xs:px-2 lg:px-10">
-              <div className="lg:mt-5 w-[100%] h-[30rem] flex flex-col items-start justify-start relative">
-                <Image
-                  src={modalData.image}
-                  alt="image"
-                  layout="fill"
-                  objectFit="contain"
-                />
-              </div>
-              <div className="">
-                <h1 className="text-2xl font-bold">{modalData.title}</h1>
-                <p className="text-lg">{modalData.description}</p>
+          <div className="w-full h-[fit-content] bg-white lg:-ml-24 sm:-ml-6 xs:-ml-6">
+            <div className="w-full h-[fit-content]  bg-white flex flex-col items-start justify-start sm:px-2 xs:px-2 lg:px-10">
+              <div className="lg:mt-5 w-[100vw]   bg-white  flex flex-col items-start justify-start relative">
+                <ItemSlider images={modalData.obj.image} />
               </div>
             </div>
           </div>
         </motion.div>
+        <div className="bg-white px-5 py-8">
+          <p className="text-sm">{modalData.obj.description}</p>
+        </div>
       </motion.div>
     </>
   );
