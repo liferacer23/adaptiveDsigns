@@ -39,7 +39,9 @@ export default function ItemModal({
               />{" "}
             </button>
           </div>
-          <h2 className="px-10 text-3xl py-10">{modalData.obj.title}</h2>
+          <h2 className="px-10 xs:text-2xl sm:text-2xl xl:text-[50px] lg:text-[50px] py-10">
+            {modalData.obj.title}
+          </h2>
         </div>
         <motion.div
           className="w-full h-[fit-content] flex items-center flex-col   bg-white
@@ -47,15 +49,15 @@ export default function ItemModal({
         >
           <div className="w-full h-[fit-content] bg-white lg:-ml-24 sm:-ml-6 xs:-ml-6">
             <div className="w-full h-[fit-content]  bg-white flex flex-col items-start justify-start sm:px-2 xs:px-2 lg:px-10">
-              <div className="lg:mt-5 w-[100vw]   bg-white  flex flex-col items-start justify-start relative">
-                <ItemSlider images={modalData.obj.image} />
+              <div className="lg:mt-5 w-[100vw]   bg-white  flex flex-col items-end justify-start relative px-5">
+                <ItemSlider
+                  description={modalData.obj.description}
+                  images={modalData.obj.image}
+                />
               </div>
             </div>
           </div>
         </motion.div>
-        <div className="bg-white px-5 py-8 w-full">
-          <p className="text-sm">{modalData.obj.description}</p>
-        </div>
       </motion.div>
     </>
   );
