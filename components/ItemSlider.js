@@ -55,7 +55,7 @@ export default function ItemSlider({ images, description }) {
   };
 
   return (
-    <div className="w-full flex justify-between items-center xs:flex-col sm:flex-col lg:flex-row">
+    <div className="w-full flex gap-3 justify-between items-center xs:flex-col sm:flex-col lg:flex-row">
       <div className="flex w-3/6">
         {" "}
         <div className="">
@@ -67,7 +67,7 @@ export default function ItemSlider({ images, description }) {
             className="mt-4"
           />
         </div>
-        <div className="text-[#4F4F4F] text-[1.2rem]  mt-4  sm:w-[100%] xs:w-[100%] lg:w-[260px] ml-7 mb-5">
+        <div className="text-[#4F4F4F] xl:text-[0.9rem] 2xl:text-[1.2rem]  mt-4  sm:w-[100%] xs:w-[100%] lg:w-[260px] ml-7 mb-5">
           <p className="text-black">
             {description[currentSlide]
               ? description[currentSlide]
@@ -76,7 +76,7 @@ export default function ItemSlider({ images, description }) {
         </div>
       </div>
       <div className="relative ">
-        <div className="lg:w-[80rem] h-[fit-content] overflow-hidden">
+        <div className="lg:w-[65rem] h-[fit-content] overflow-hidden">
           <Slider {...settings} ref={carouselRef}>
             {images &&
               images.map((image, index) => (

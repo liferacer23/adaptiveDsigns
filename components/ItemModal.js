@@ -39,7 +39,7 @@ export default function ItemModal({
               />{" "}
             </button>
           </div>
-          <h2 className="px-10 xs:text-2xl sm:text-2xl xl:text-[50px] lg:text-[50px] py-10">
+          <h2 className="px-10 xs:text-2xl sm:text-2xl xl:text-[40px] lg:text-[50px] py-10">
             {modalData.obj.title}
           </h2>
         </div>
