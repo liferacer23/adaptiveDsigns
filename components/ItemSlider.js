@@ -9,6 +9,7 @@ import quots from "../public/blackQuots.svg";
 export default function ItemSlider({ images, description }) {
   const carouselRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [modal, setModal] = useState(false);
   var settings = {
     button: false,
     className: "center w-[100vw]",

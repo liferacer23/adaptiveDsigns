@@ -27,7 +27,7 @@ export default function ItemModal({
         className="fixed top-0 w-[100vw] h-[100vh] bg-white z-50 overflow-auto
       "
       >
-        <div className="bg-secondary h-[fit-content] flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-8 pb-4 lg:px-10">
+        <div className="bg-secondary h-[fit-content] flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-4 pb-4 lg:px-10">
           <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2">
             <button
               onClick={() => handleModal()}
