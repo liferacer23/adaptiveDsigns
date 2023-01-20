@@ -77,7 +77,7 @@ export default function ItemSlider({ images, description }) {
         </div>
       </div>
       <div className="relative ">
-        <div className="lg:w-[65rem] h-[fit-content] overflow-hidden">
+        <div className="lg:w-[65rem] 2xl:w-[85rem] h-[fit-content] overflow-hidden">
           <Slider {...settings} ref={carouselRef}>
             {images &&
               images.map((image, index) => (
