@@ -56,6 +56,7 @@ export default function ContactUs() {
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Name</span>
             <Input
+              label="Name"
               className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
               size="large"
             />
@@ -63,6 +64,7 @@ export default function ContactUs() {
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Email</span>
             <Input
+              label="Email"
               className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
               size="large"
               type="email"
@@ -70,7 +72,10 @@ export default function ContactUs() {
           </div>
           <div className="flex flex-col items-start justify-start">
             <span className="font-bold text-md mt-5">Message</span>
-            <TextArea className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2" />
+            <TextArea
+              label="Message"
+              className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
+            />
           </div>
           <div className="flex flex-col items-start justify-start">
             <Button className="rounded-full h-12 mt-5 bg-white shadow-xl font-bold text-xl">
