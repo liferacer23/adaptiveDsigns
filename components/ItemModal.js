@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
 import ItemSlider from "./ItemSlider";
+
 export default function ItemModal({
   setModalState,
   itemModal,
   modalData,
   setModalData,
 }) {
+  const [modal, setModal] = useState(true);
   const handleModal = () => {
     setModalState(!itemModal);
   };
