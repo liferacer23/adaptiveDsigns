@@ -30,12 +30,12 @@ function Carousel({ slides }) {
     >
       {slides[currentIndex]}
       <div className="w-full flex justify-center items-center lg:mt-10 gap-20">
-        <button className="cursor-pointer" onClick={goToPrevSlide}>
+        <div className="cursor-pointer" onClick={goToPrevSlide}>
           <BsChevronLeft className="text-3xl" />
-        </button>
-        <button className="cursor-pointer" onClick={goToNextSlide}>
+        </div>
+        <div className="cursor-pointer" onClick={goToNextSlide}>
           <BsChevronRight className="text-3xl" />
-        </button>
+        </div>
       </div>
     </motion.div>
   );

@@ -23,7 +23,7 @@ export default function Blog() {
       </div>
       <div className="w-full h-full flex flex-wrap items-center justify-center gap-10 my-5">
         <div className="flex-col items-center justify-center">
-          <Button className="w-60 h-96 bg-white"></Button>
+          <div className="w-60 h-96 bg-white"></div>
           <div className="w-60 flex flex-col items-start justify-center ">
             <span className="font-bold text-sm">BLOG</span>
             <span className="font-bold text-2xl">BLOG</span>
@@ -31,7 +31,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="flex-col items-center justify-center">
-          <Button className="w-60 h-96 bg-white"></Button>
+          <div className="w-60 h-96 bg-white"></div>
           <div className="w-60 flex flex-col items-start justify-center ">
             <span className="font-bold text-sm">BLOG</span>
             <span className="font-bold text-2xl">ABOUT ADAPTIVE DESIGN</span>
@@ -39,7 +39,7 @@ export default function Blog() {
           </div>
         </div>
         <div className="flex-col items-center justify-center">
-          <Button className="w-60 h-96 bg-white"></Button>
+          <div className="w-60 h-96 bg-white"></div>
           <div className="w-60 flex flex-col items-start justify-center ">
             <span className="font-bold text-sm">BLOG</span>
             <span className="font-bold text-2xl">PORTFOLIO</span>
