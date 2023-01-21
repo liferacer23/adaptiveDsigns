@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import Slider from "react-slick";
 import Button from "antd/lib/button";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
@@ -11,6 +11,7 @@ import { AnimatePresence } from "framer-motion";
 export default function ItemSlider({ images, description }) {
   const carouselRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [modal, setModal] = useState(false);
   var settings = {
     button: false,
@@ -60,7 +61,14 @@ export default function ItemSlider({ images, description }) {
   return (
     <>
       <AnimatePresence>
-        {modal && <ModalSlider images={images} setModal={setModal} />}
+        {modal && (
+          <ModalSlider
+            images={images}
+            setModal={setModal}
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
+          />
+        )}
       </AnimatePresence>
       <div className="w-full flex gap-3 justify-between items-center sm:flex-col-reverse xs:flex-col-reverse lg:flex-row">
         <div className="flex lg:w-3/6 sm:w-full xs:w-full">
@@ -88,7 +96,9 @@ export default function ItemSlider({ images, description }) {
               {images &&
                 images.map((image, index) => (
                   <div
-                    onClick={() => setModal(true)}
+                    onClick={() => {
+                      setModal(true), setCurrentIndex(index);
+                    }}
                     key={index}
                     className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"
                   >
