@@ -15,7 +15,7 @@ export default function Footer() {
       <span className="text-white text-sm mt-5">adaptivedesigns.com</span>
       <div className="flex gap-2 items-center justify-center">
         <Link
-          name="instagram"
+          aria-label="instagram"
           href="https://www.instagram.com/adaptivedesigns"
           target="_blank"
         >
@@ -25,7 +25,7 @@ export default function Footer() {
           />{" "}
         </Link>
         <Link
-          name="linkedin"
+          aria-label="linkedin"
           href="https://www.linkedin.com/company/adaptivedesigns"
           target="_blank"
         >
@@ -33,7 +33,7 @@ export default function Footer() {
           <FaLinkedinIn style={{ fontSize: "1rem", color: "#fff" }} />{" "}
         </Link>
         <Link
-          name="facebook"
+          aria-label="facebook"
           href="https://www.facebook.com/adaptivedesigns"
           target="_blank"
         >
@@ -41,7 +41,7 @@ export default function Footer() {
           <GrFacebookOption style={{ fontSize: "1rem", color: "#fff" }} />{" "}
         </Link>
         <Link
-          name="telegram"
+          aria-label="telegram"
           href="https://t.me/adaptivedesigns"
           target="_blank"
         >

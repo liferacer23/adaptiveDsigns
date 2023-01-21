@@ -54,26 +54,35 @@ export default function ContactUs() {
 
         <div className="flex flex-col items-center justify-center w-[fit-content] px-10">
           <div className="flex flex-col items-start justify-start">
-            <span className="font-bold text-md mt-5">Name</span>
+            <label for="name" className="font-bold text-md mt-5">
+              Name
+            </label>
             <Input
-              label="Name"
+              id="name"
+              name="name"
               className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
               size="large"
             />
           </div>
           <div className="flex flex-col items-start justify-start">
-            <span className="font-bold text-md mt-5">Email</span>
+            <label for="email" className="font-bold text-md mt-5">
+              Email
+            </label>
             <Input
-              label="Email"
+              id="email"
+              name="email"
               className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
               size="large"
               type="email"
             />
           </div>
           <div className="flex flex-col items-start justify-start">
-            <span className="font-bold text-md mt-5">Message</span>
+            <label for="message" className="font-bold text-md mt-5">
+              Message
+            </label>
             <TextArea
-              label="Message"
+              id="message"
+              name="message"
               className=" lg:w-96 sm:w-72 xs:w-72 h-10 mt-2"
             />
           </div>
