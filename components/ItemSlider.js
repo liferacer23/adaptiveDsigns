@@ -106,7 +106,8 @@ export default function ItemSlider({ images, description }) {
                       <Image
                         placeholder="blur"
                         blurDataURL={image}
-                        className="p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer"
+                        className={`p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-500 ease-in-out cursor-pointer
+                         ${currentSlide === index ? "scale-120" : "scale-100"}`}
                         src={image}
                         alt="image"
                         layout="fill"

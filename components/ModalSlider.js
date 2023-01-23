@@ -70,7 +70,7 @@ export default function ModalSlider({
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         exit={{ x: 2000, opacity: 0 }}
-        className="fixed top-0 left-0 w-full h-full bg-secondary opacity-10 z-50 flex flex-col items-center justify-center backdrop-blur-xl overflow-auto
+        className="fixed top-0 left-0 w-full h-full  blur-20 opacity-0 z-50 flex flex-col items-center justify-center backdrop-blur-xl overflow-auto
       "
       >
         {" "}
@@ -85,7 +85,7 @@ export default function ModalSlider({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="flex h-[fit-content] w-full bg-secondary opacity-10"
+          className="flex h-[fit-content] w-full  opacity-0"
         >
           <div className=" w-full relative">
             <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7">
@@ -132,13 +132,7 @@ export default function ModalSlider({
                     className=" 2xl:h-[40rem] lg:h-[35rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] relative"
                   >
                     {" "}
-                    <Image
-                      className="hover:scale-150"
-                      src={image}
-                      alt="image1"
-                      objectFit="contain"
-                      fill
-                    />
+                    <Image src={image} alt="image1" objectFit="contain" fill />
                   </div>
                 );
               })}

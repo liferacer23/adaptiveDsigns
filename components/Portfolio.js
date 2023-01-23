@@ -39,23 +39,23 @@ export default function Portfolio({ openModal, setOpenModal }) {
         </div>
         <div className="2xl:h-[40rem] xl:h-[30rem] lg:h-[27rem] xs:h-[47rem] sm:h-[47rem] xs:flex-col sm:flex-col lg:flex-row flex items-center justify-center xl:w-[70rem] 2xl:w-[90rem] lg:w-[60rem] xs:w-[23rem] sm:w-[23rem]">
           <div className="flex lg:flex-row xs:flex-col sm:flex-col lg:w-[90%] xs:w-[100%] sm:w-[100%] h-full bg-transparent">
-            <div
-              onClick={() =>
-                handleModal({
-                  title: "Architecture",
-                  content: "Cafe",
-                  images: ["/cafe.webp"],
-                  multiple: false,
-                })
-              }
-              className="relative h-full lg:w-[50%] xs:w-[100%] sm:w-[100%]"
-            >
-              <div className="p-4 flex items-center justify-center absolute h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
-                <span className="text-3xl font-bold">Architecture</span>
-              </div>
-              <div className=" h-full w-full bg-[url('../public/cafe.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
-            </div>
             <div className="h-full lg:w-[50%] xs:w-[100%] sm:w-[100%] flex flex-col">
+              <div
+                className="relative h-[50%] w-full"
+                onClick={() =>
+                  handleModal({
+                    title: "Interior Design",
+                    content: "Interior Design",
+                    images: ["/conference.webp"],
+                    multiple: false,
+                  })
+                }
+              >
+                <div className=" absolute p-4 flex items-center justify-center h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
+                  <span className="text-3xl font-bold">Interior Design</span>
+                </div>
+                <div className=" h-full w-full  bg-[url('../public/conference.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
+              </div>
               <div
                 className="h-[50%] w-full "
                 onClick={() =>
@@ -77,22 +77,22 @@ export default function Portfolio({ openModal, setOpenModal }) {
                   <div className=" h-full w-[50%]  bg-[url('../public/chair.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
                 </div>
               </div>
-              <div
-                className="relative h-[50%] w-full"
-                onClick={() =>
-                  handleModal({
-                    title: "Interior Design",
-                    content: "Interior Design",
-                    images: ["/conference.webp"],
-                    multiple: false,
-                  })
-                }
-              >
-                <div className=" absolute p-4 flex items-center justify-center h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
-                  <span className="text-3xl font-bold">Interior Design</span>
-                </div>
-                <div className=" h-full w-full  bg-[url('../public/conference.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
+            </div>
+            <div
+              onClick={() =>
+                handleModal({
+                  title: "Architecture",
+                  content: "Cafe",
+                  images: ["/cafe.webp"],
+                  multiple: false,
+                })
+              }
+              className="relative h-full lg:w-[50%] xs:w-[100%] sm:w-[100%]"
+            >
+              <div className="p-4 flex items-center justify-center absolute h-full w-full opacity-0 hover:opacity-80 bg-black  cursor-pointer transition-all duration-1000">
+                <span className="text-3xl font-bold">Architecture</span>
               </div>
+              <div className=" h-full w-full bg-[url('../public/cafe.webp')] cursor-pointer bg-cover transition-all duration-1000 hover:hidden"></div>
             </div>
           </div>
         </div>
