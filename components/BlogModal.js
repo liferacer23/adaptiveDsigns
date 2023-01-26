@@ -277,11 +277,11 @@ export default function BlogModal({ setModalVisible, blogVisible, blogData }) {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         exit={{ x: 2000, opacity: 0 }}
-        className="fixed top-0 w-[100vw] h-[100vh] bg-gray-200 z-50 overflow-auto
+        className="fixed top-0 w-[100vw] h-full bg-gray-200 z-50 overflow-auto
       "
       >
-        <div className="bg-gray-200 h-[fit-content] flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-4 pb-4 lg:px-10">
-          <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2">
+        <div className="bg-gray-200 flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-4 pb-4 lg:px-10">
+          <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2 my-5">
             <button
               onClick={() => setModalVisible(!blogVisible)}
               className=" px-4 py-2 font-bold rounded-full focus:outline-none focus:shadow-outline"
