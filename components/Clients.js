@@ -5,10 +5,20 @@ import Carousel from "antd/lib/carousel";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import logo1 from "../public/LogoImages/tadesse.png";
+import logo2 from "../public/LogoImages/tona.jpg";
+import logo3 from "../public/LogoImages/suwey.png";
+import logo4 from "../public/LogoImages/bona.jpg";
+import logo5 from "../public/LogoImages/owda.jpg";
+import logo6 from "../public/LogoImages/aie.jpg";
+import logo7 from "../public/LogoImages/lili.jpg";
+import logo8 from "../public/LogoImages/Nib.png";
+import logo9 from "../public/LogoImages/vet.jpg";
 export default function Clients() {
   const carouselRef = useRef(null);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const { ref, inView } = useInView({});
+  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
   const clientNames = [
     {
       name: "CEO of Tadesse flatsea PLC ",
@@ -61,8 +71,8 @@ export default function Clients() {
           </div>
         </div>
       </div>
-      <div className="lg:h-full xs:h-full sm:h-full w-full relative flex items-center justify-center mb-5">
-        <div className="absolute z-20 lg:flex sm:flex xs:flex lg:w-full sm:w-full xs:w-full items-center justify-center lg:-bottom-5 sm:-bottom-12 xs:-bottom-12 pr-10 pl-8">
+      <div className="lg:h-full xs:h-full sm:h-full w-full relative flex items-center justify-center mb-10">
+        <div className="absolute z-20 lg:flex sm:flex xs:flex lg:w-full sm:w-full xs:w-full items-center justify-center lg:-bottom-5 sm:-bottom-12 xs:-bottom-12 pr-10 pl-8 mb-10 mt-10">
           <span
             className="cursor-pointer"
             onClick={() => {
@@ -82,13 +92,13 @@ export default function Clients() {
           </span>
           <div className="lg:w-[23%] sm:w-[100%] xs:w-[100%] flex gap-3 items-center justify-center text-center pl-4">
             <div>
-              <Image
+              {/* <Image
                 src={`/${clientNames[carouselIndex]?.image}`}
                 alt="dots image"
                 width={80}
                 height={100}
                 className="rounded-full"
-              />
+              /> */}
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-bold text-center">
@@ -167,6 +177,18 @@ export default function Clients() {
             </div>
           </Carousel>
         </div>
+      </div>
+      <div className="flex w-full flex-wrap items-center justify-center gap-5 mt-15">
+        {logos.map((logo, index) => (
+          <div
+            style={{
+              display: "inline-flex",
+            }}
+            key={index}
+          >
+            <Image src={logo} alt="logo" width={100} height={100} />
+          </div>
+        ))}
       </div>
     </motion.div>
   );

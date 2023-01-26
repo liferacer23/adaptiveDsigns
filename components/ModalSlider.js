@@ -70,14 +70,15 @@ export default function ModalSlider({
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
         exit={{ x: 2000, opacity: 0 }}
-        className="fixed top-0 left-0 w-full h-full  blur-20 opacity-0 z-50 flex flex-col items-center justify-center backdrop-blur-xl overflow-auto
+        className="fixed top-0 left-0 w-full h-full bg-white opacity-0 z-50 flex flex-col items-center justify-center backdrop-blur-xl overflow-auto
       "
       >
         {" "}
         <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2 cursor-pointer">
           <BiArrowBack
-            className="inline-block mr-2 text-2xl"
-            color="#FFf"
+            style={{ fontSize: "1.5rem" }}
+            className="inline-block mr-2 text-3x"
+            color="#000"
             onClick={() => setModal(false)}
           />{" "}
         </div>
