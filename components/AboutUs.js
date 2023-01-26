@@ -7,7 +7,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { AiOutlineInstagram } from "react-icons/ai";
-import cofounders from "../public/cofounders.webp";
+import cofounders from "../public/Cofounders.webp";
 import Link from "next/link";
 export default function AboutUs() {
   const { ref, inView } = useInView({});
