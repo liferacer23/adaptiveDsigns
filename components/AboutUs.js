@@ -103,7 +103,7 @@ export default function AboutUs() {
               <Image
                 src={cofounders}
                 alt="cofounders"
-                className="w-full lg:h-full sm:h-52 xs:h-52 lg:object-cover"
+                className="w-full lg:h-full sm:h-50 xs:h-50 lg:object-cover"
               />
             </div>
           </div>
