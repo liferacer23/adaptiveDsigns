@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
-import ItemSlider from "./ItemSlider";
 
 export default function BlogModal({ setModalVisible, blogVisible, blogData }) {
   const blog1 = () => {
@@ -11,7 +10,6 @@ export default function BlogModal({ setModalVisible, blogVisible, blogData }) {
           <h1 class="text-2xl font-medium">
             Office Interior Design Considerations
           </h1>
-          Copy code
           <p class="my-4">
             When designing the interior of an office, there are a number of
             important considerations to keep in mind. These include the overall
@@ -289,7 +287,7 @@ export default function BlogModal({ setModalVisible, blogVisible, blogData }) {
               className=" px-4 py-2 font-bold rounded-full focus:outline-none focus:shadow-outline"
             >
               <BiArrowBack
-                className="inline-block mr-2 text-2xl"
+                className="inline-block mr-2 text-2xl mb-5"
                 color="#000"
               />{" "}
             </button>
