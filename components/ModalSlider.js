@@ -88,7 +88,7 @@ export default function ModalSlider({
                   key={index}
                   className="2xl:h-[40rem] lg:h-[35rem] sm:h-[60vh] xs:h-[60vh] w-[100vw] relative"
                 >
-                  <Image src={image} alt="image1" objectFit="cover" fill />
+                  <Image src={image} alt="image1" objectFit="contain" fill />
                 </div>
               ))}
             </Carousel>

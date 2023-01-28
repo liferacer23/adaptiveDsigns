@@ -8,6 +8,8 @@ import beforeInterior1 from "../public/BeforeAndAfter/2/beforeInterior1.webp";
 import afterInterior2 from "../public/BeforeAndAfter/2/afterInterior1.webp";
 import beforeInterior2 from "../public/BeforeAndAfter/2/beforeInterior2.webp";
 import afterInterior1 from "../public/BeforeAndAfter/2/afterInterior2.webp";
+import beforeInterior3 from "../public/BeforeAndAfter/3/1.webp";
+import afterInterior3 from "../public/BeforeAndAfter/3/2.webp";
 import { motion } from "framer-motion";
 import {
   ReactCompareSlider,
@@ -82,30 +84,30 @@ export default function Team() {
               />
             </div>
           </motion.div>,
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            key={2}
-            className="w-full flex items-center justify-center m-auto"
-          >
-            <div className=" flex items-center justify-center m-auto w-[38rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
-              <ReactCompareSlider
-                itemOne={
-                  <ReactCompareSliderImage
-                    src={beforeInterior1.src}
-                    alt="Image one"
-                  />
-                }
-                itemTwo={
-                  <ReactCompareSliderImage
-                    src={afterInterior1.src}
-                    alt="Image two"
-                  />
-                }
-              />
-            </div>
-          </motion.div>,
+          // <motion.div
+          //   initial={{ opacity: 0 }}
+          //   animate={{ opacity: 1 }}
+          //   transition={{ duration: 2 }}
+          //   key={2}
+          //   className="w-full flex items-center justify-center m-auto"
+          // >
+          //   <div className=" flex items-center justify-center m-auto w-[38rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
+          //     <ReactCompareSlider
+          //       itemOne={
+          //         <ReactCompareSliderImage
+          //           src={beforeInterior1.src}
+          //           alt="Image one"
+          //         />
+          //       }
+          //       itemTwo={
+          //         <ReactCompareSliderImage
+          //           src={afterInterior1.src}
+          //           alt="Image two"
+          //         />
+          //       }
+          //     />
+          //   </div>
+          // </motion.div>,
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -124,6 +126,30 @@ export default function Team() {
                 itemTwo={
                   <ReactCompareSliderImage
                     src={afterInterior2.src}
+                    alt="Image two"
+                  />
+                }
+              />
+            </div>
+          </motion.div>,
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            key={2}
+            className="w-full flex items-center justify-center m-auto"
+          >
+            <div className=" flex items-center justify-center m-auto w-[65rem] lg:h-[45rem] sm:h[fit-content] xs:h[fit-content] sm:my-16 xs:my-16 ">
+              <ReactCompareSlider
+                itemOne={
+                  <ReactCompareSliderImage
+                    src={beforeInterior3.src}
+                    alt="Image one"
+                  />
+                }
+                itemTwo={
+                  <ReactCompareSliderImage
+                    src={afterInterior3.src}
                     alt="Image two"
                   />
                 }

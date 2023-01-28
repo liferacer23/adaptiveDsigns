@@ -28,7 +28,7 @@ export default function Footer() {
         <Link
           nofollow
           aria-label="linkedin"
-          href="https://www.linkedin.com/company/adaptivedesigns"
+          href="https://www.linkedin.com/in/adaptive-designs-781590230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYxul7GjMRtOzxWVjTw%2B1yw%3D%3D"
           target="_blank"
         >
           {" "}
@@ -46,7 +46,7 @@ export default function Footer() {
         <Link
           nofollow
           aria-label="telegram"
-          href="https://t.me/adaptivedesigns"
+          href="https://t.me/adaptive_designs"
           target="_blank"
         >
           {" "}

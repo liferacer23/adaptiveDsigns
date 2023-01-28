@@ -72,14 +72,19 @@ export default function AboutUs() {
                   }}
                 />
               </Link>
-              <FaLinkedinIn
-                style={{
-                  fontSize: "1.2rem",
-                  color: "#fff",
-                  cursor: "pointer",
-                  marginRight: "10px",
-                }}
-              />
+              <Link
+                nofollow
+                href="https://www.linkedin.com/in/adaptive-designs-781590230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYxul7GjMRtOzxWVjTw%2B1yw%3D%3D"
+              >
+                <FaLinkedinIn
+                  style={{
+                    fontSize: "1.2rem",
+                    color: "#fff",
+                    cursor: "pointer",
+                    marginRight: "10px",
+                  }}
+                />
+              </Link>
               <Link nofollow href="https://www.facebook.com/adaptivedesignsET/">
                 <GrFacebookOption
                   style={{
@@ -90,14 +95,16 @@ export default function AboutUs() {
                   }}
                 />
               </Link>
-              {/* <FaTelegramPlane
-                style={{
-                  fontSize: "1.2rem",
-                  color: "#fff",
-                  cursor: "pointer",
-                  marginRight: "10px",
-                }}
-              /> */}
+              <Link nofollow href="https://t.me/adaptive_designs">
+                <FaTelegramPlane
+                  style={{
+                    fontSize: "1.2rem",
+                    color: "#fff",
+                    cursor: "pointer",
+                    marginRight: "10px",
+                  }}
+                />
+              </Link>
             </div>
             <div className="w-full relative h-full flex flex-col justify-end items-end">
               <Image

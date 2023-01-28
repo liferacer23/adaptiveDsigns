@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "antd/lib/button";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import BlogModal from "./BlogModal";
@@ -41,8 +41,15 @@ export default function Blog() {
                 setModalVisible(true);
                 setBlogData(1);
               }}
-              className="w-60 h-96 bg-white"
-            ></div>
+              className="w-60 h-96  relative"
+            >
+              <Image
+                src="/Blogs/officeInterior.webp"
+                alt="Picture of the author"
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div
               onClick={() => {
                 setModalVisible(true);
@@ -61,8 +68,15 @@ export default function Blog() {
                 setModalVisible(true);
                 setBlogData(2);
               }}
-              className="w-60 h-96 bg-white"
-            ></div>
+              className="w-60 h-96 relative"
+            >
+              <Image
+                src="/Blogs/prediction.webp"
+                alt="Picture of the author"
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div
               onClick={() => {
                 setModalVisible(true);
@@ -82,8 +96,15 @@ export default function Blog() {
                 setModalVisible(true);
                 setBlogData(3);
               }}
-              className="w-60 h-96 bg-white"
-            ></div>
+              className="w-60 h-96 relative"
+            >
+              <Image
+                src="/Blogs/RetailInterior.webp"
+                alt="Picture of the author"
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div
               onClick={() => {
                 setModalVisible(true);
