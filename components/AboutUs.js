@@ -62,7 +62,7 @@ export default function AboutUs() {
         <div className="flex flex-col w-full lg:h-[28rem] xs:h-full sm:h-full sm:mt-0 xs:mt-0">
           <div className="flex sm:h-[15rem] xs:h-[15rem] lg:h-[25rem] w-[100%]">
             <div className="flex flex-col h-[100%] justify-end w-6 items-center gap-5 pb-5 ">
-              <Link href="https://www.instagram.com/adaptive_designs/">
+              <Link nofollow href="https://www.instagram.com/adaptive_designs/">
                 <AiOutlineInstagram
                   style={{
                     fontSize: "1.2rem",
@@ -80,7 +80,7 @@ export default function AboutUs() {
                   marginRight: "10px",
                 }}
               />
-              <Link href="https://www.facebook.com/adaptivedesignsET/">
+              <Link nofollow href="https://www.facebook.com/adaptivedesignsET/">
                 <GrFacebookOption
                   style={{
                     fontSize: "1.2rem",
