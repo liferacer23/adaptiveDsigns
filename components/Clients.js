@@ -61,7 +61,7 @@ export default function Clients() {
           <div className="flex flex-col items-start justify-center relative w-52 h-40 bg-white">
             <span className="text-[130px] ">05</span>
             <div className="h-16 w-full flex flex-col px-3 absolute bottom-2 bg-white">
-              <span className="font-bold text-2xl">CLIENTS</span>
+              <span className="font-bold text-xl">CLIENTS</span>
               <span className="font-bold text-sm">UPDATES</span>
             </div>
           </div>
@@ -91,15 +91,6 @@ export default function Clients() {
             />
           </span>
           <div className="lg:w-[23%] sm:w-[100%] xs:w-[100%] flex gap-3 items-center justify-center text-center pl-4">
-            <div>
-              {/* <Image
-                src={`/${clientNames[carouselIndex]?.image}`}
-                alt="dots image"
-                width={80}
-                height={100}
-                className="rounded-full"
-              /> */}
-            </div>
             <div className="flex flex-col">
               <span className="text-sm font-bold text-center">
                 {clientNames[carouselIndex]?.name}
@@ -127,46 +118,46 @@ export default function Clients() {
             />
           </span>
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full mt-4">
           <Carousel
             dots={false}
             afterChange={(current) => setCarouselIndex(current)}
             autoplay
             ref={carouselRef}
-            className="lg:px-24 sm:px-2 xs:px-2 h-full lg:p-8 xs:p-2 sm:p-2"
+            className="lg:px-24 sm:px-2 xs:px-2 h-full lg:p-8 xs:p-2 sm:p-2 py-5"
           >
-            <div className="p-5 flex items-center justify-center lg:h-full sm:h-full xs:h-full w-[100vw] bg-white relative text-left leading-loose text-xs">
-              <p className="text-2xl font-bold text-center mb-5">
+            <div className="p-5 flex items-center justify-center lg:h-full sm:hfit-contentl xs:hfit-contentl w-[100vw] bg-white relative text-left leading-loose text-xs">
+              <p className="text-xl font-bold text-center mb-5">
                 &quot; They delivered the best possible layout according to our
                 needs and they even added their own insights on how to make the
                 most of the space by thinking about even the smallest of details
                 in our day-to-day working process. &quot;
               </p>
             </div>
-            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[40vh] xs:h-[40vh] w-[100vw] bg-white relative text-left leading-loose text-xs">
-              <p className="text-2xl font-bold text-center mb-5">
+            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[fit-content] xs:h-[fit-content] w-[100vw] bg-white relative text-left leading-loose text-xs">
+              <p className="text-xl font-bold text-center mb-5">
                 &quot; They were able to create a beautiful and comfortable
                 space which has helped to attract customers and our restaurant
                 become successful.&quot;
               </p>
             </div>
-            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[40vh] xs:h-[40vh] w-[100vw] bg-white relative text-left leading-loose text-xs">
-              <p className="text-2xl font-bold text-center mb-5">
+            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[fit-content] xs:h-[fit-content] w-[100vw] bg-white relative text-left leading-loose text-xs">
+              <p className="text-xl font-bold text-center mb-5">
                 &quot; They demonstrated a high level of competence and
                 professionalism from the first meeting. But most of all we were
                 instantly impressed by their drive and willingness to give a
                 100% to create the perfect space for our needs.&quot;
               </p>
             </div>
-            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[40vh] xs:h-[40vh] w-[100vw] bg-white relative text-left leading-loose text-xs">
-              <p className="text-2xl font-bold text-center mb-5">
+            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[fit-content] xs:h-[fit-content] w-[100vw] bg-white relative text-left leading-loose text-xs">
+              <p className="text-xl font-bold text-center mb-5">
                 &quot;This was the second project we worked on with adaptive
                 designs. We wanted a fresh space but in a cost-efficient manner
                 and they delivered beyond what we thought was possible to make
                 of our old dingy space. &quot;
               </p>
             </div>
-            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[40vh] xs:h-[40vh] w-[100vw] bg-white relative text-left leading-loose text-xs">
+            <div className="p-5 flex items-center justify-center lg:h-full sm:h-[fit-content] xs:h-[fit-content] w-[100vw] bg-white relative text-left leading-loose text-xs">
               <p className="text-xl font-bold text-center mb-5">
                 &quot;The office was on an old 60-year-old building and there
                 were structural and bureaucratic limits to how much freedom we
@@ -178,9 +169,10 @@ export default function Clients() {
           </Carousel>
         </div>
       </div>
-      <div className="flex w-full flex-wrap items-center justify-center gap-5 mt-15">
+      <div className="flex w-full flex-wrap items-center justify-center gap-5 ">
         {logos.map((logo, index) => (
           <div
+            className="mt-5"
             style={{
               display: "inline-flex",
             }}

@@ -1,9 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Carousel from "antd/lib/carousel";
 import Button from "antd/lib/button";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import Image from "next/image";
@@ -16,53 +14,12 @@ export default function ModalSlider({
   const carouselRef = useRef(null);
 
   useEffect(() => {
+    carouselRef.current.goTo(currentIndex);
     return () => {
       setCurrentIndex(0);
     };
   }, []);
 
-  var settings = {
-    button: false,
-    className: "center w-[100vw]",
-    centerMode: true,
-    infinite: true,
-
-    slidesToShow: 1,
-    speed: 500,
-    dots: true,
-    initialSlide: currentIndex,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          className: "center",
-          centerMode: true,
-          infinite: true,
-          centerPadding: "60px",
-          slidesToShow: images.length > 3 ? 3 : images.length,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
-        },
-      },
-    ],
-  };
   return (
     <>
       <motion.div
@@ -76,8 +33,8 @@ export default function ModalSlider({
         {" "}
         <div className=" h-[fit-content] flex items-center justify-start absolute top-5 left-2 cursor-pointer">
           <BiArrowBack
-            style={{ fontSize: "1.5rem" }}
-            className="inline-block mr-2 text-3x"
+            style={{ fontSize: "2rem" }}
+            className="inline-block ml-2 mb-5 text-3x cursor-pointer"
             color="#000"
             onClick={() => setModal(false)}
           />{" "}
@@ -86,7 +43,7 @@ export default function ModalSlider({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="flex h-[fit-content] w-full  opacity-0"
+          className="flex  w-full sm:mt-1 xs:mt-1 lg:mt-14"
         >
           <div className=" w-full relative">
             <div className="hidden absolute z-20 lg:flex w-full h-full items-center justify-between pl-5 pr-7">
@@ -104,7 +61,7 @@ export default function ModalSlider({
                   />
                 }
                 onClick={() => {
-                  carouselRef.current.slickPrev();
+                  carouselRef.current.prev();
                 }}
               ></Button>
               <Button
@@ -121,23 +78,20 @@ export default function ModalSlider({
                   />
                 }
                 onClick={() => {
-                  carouselRef.current.slickNext();
+                  carouselRef.current.next();
                 }}
               ></Button>
             </div>
-            <Slider {...settings} ref={carouselRef}>
-              {images.map((image, index) => {
-                return (
-                  <div
-                    key={index}
-                    className=" 2xl:h-[40rem] lg:h-[35rem] sm:h-[50vh] xs:h-[50vh] w-[100vw] relative"
-                  >
-                    {" "}
-                    <Image src={image} alt="image1" objectFit="contain" fill />
-                  </div>
-                );
-              })}
-            </Slider>
+            <Carousel current={currentIndex} ref={carouselRef} dots={false}>
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className="2xl:h-[40rem] lg:h-[35rem] sm:h-[60vh] xs:h-[60vh] w-[100vw] relative"
+                >
+                  <Image src={image} alt="image1" objectFit="cover" fill />
+                </div>
+              ))}
+            </Carousel>
           </div>
         </motion.div>
       </motion.div>

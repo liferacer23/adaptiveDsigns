@@ -109,8 +109,8 @@ export default function ItemSlider({ images, description }) {
                         className={`p-2 xs:px-1 sm:px-1 lg:mx-2 transition duration-800 ease-in-out cursor-pointer
                          ${
                            currentSlide === index
-                             ? "scale-125 z-50 "
-                             : "scale-100"
+                             ? "lg:scale-125 z-50 "
+                             : "lg:scale-100"
                          }`}
                         src={image}
                         alt="image"

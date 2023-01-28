@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="flex gap-2 items-center justify-center">
         <Link
           aria-label="instagram"
-          href="https://www.instagram.com/adaptivedesigns"
+          href="https://www.instagram.com/adaptive_designs/"
           target="_blank"
         >
           {" "}
@@ -34,7 +34,7 @@ export default function Footer() {
         </Link>
         <Link
           aria-label="facebook"
-          href="https://www.facebook.com/adaptivedesigns"
+          href="https://www.facebook.com/adaptivedesignsET/"
           target="_blank"
         >
           {" "}

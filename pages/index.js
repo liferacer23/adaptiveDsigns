@@ -21,13 +21,13 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Adaptive Designs | Interior Design | Architectural Design | Turnkey,
-          Product and Furniture
+          Adaptive Designs | Interior Design | Architectural Design | Addis
+          Ababa, , Ethiopia
         </title>
         <meta
           name="description"
           content="
-          We are the best Interior design company in Ethiopia, We work on different things like interior design, Architectural Design, Turnkey, Product and Furniture, and many more.
+          We are the best Interior design company in Addis Ababa, Ethiopia, We work on different things like interior design, Architectural Design, Turnkey, Product.
           "
         />
         <link rel="icon" href="/favicon.ico" />
