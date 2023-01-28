@@ -200,7 +200,7 @@ The spa is intended to be filled with nature and earthly tones. The rough textur
         "/Portfolio/Interior/Commercial/9/2.png",
         "/Portfolio/Interior/Commercial/9/3.png",
         "/Portfolio/Interior/Commercial/9/4.png",
-        "/Portfolio/Interior/Commercial/9/5.png",
+        "/Portfolio/Interior/Commercial/9/5.jpg",
         "/Portfolio/Interior/Commercial/9/6.png",
         "/Portfolio/Interior/Commercial/9/7.png",
         "/Portfolio/Interior/Commercial/9/8.png",
