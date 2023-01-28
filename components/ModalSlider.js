@@ -86,9 +86,14 @@ export default function ModalSlider({
               {images.map((image, index) => (
                 <div
                   key={index}
-                  className="2xl:h-[40rem] lg:h-[35rem] sm:h-[60vh] xs:h-[60vh] w-[100vw] relative"
+                  className="2xl:h-[40rem] lg:h-[35rem] sm:h-[70vh] xs:h-[70vh] w-[100vw] relative"
                 >
-                  <Image src={image} alt="image1" objectFit="contain" fill />
+                  <Image
+                    src={image}
+                    alt="image1"
+                    className="object-contain w-full h-full"
+                    fill
+                  />
                 </div>
               ))}
             </Carousel>
