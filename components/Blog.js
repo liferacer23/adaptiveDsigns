@@ -71,7 +71,7 @@ export default function Blog() {
               className="w-60 h-96 relative"
             >
               <Image
-                src="/Blogs/prediction.webp"
+                src="/Blogs/RetailInterior.webp"
                 alt="Picture of the author"
                 fill
                 objectFit="cover"
@@ -99,7 +99,7 @@ export default function Blog() {
               className="w-60 h-96 relative"
             >
               <Image
-                src="/Blogs/RetailInterior.webp"
+                src="/Blogs/prediction.webp"
                 alt="Picture of the author"
                 fill
                 objectFit="cover"
