@@ -111,6 +111,8 @@ export default function AboutUs() {
                 src={cofounders}
                 alt="cofounders"
                 className="w-full lg:h-full sm:h-50 xs:h-50 lg:object-cover"
+                height={500}
+                width={500}
               />
             </div>
           </div>
