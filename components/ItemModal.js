@@ -18,7 +18,7 @@ export default function ItemModal({
     return () => {
       setModalData(modalData);
     };
-  }, []);
+  });
   return (
     <>
       <motion.div

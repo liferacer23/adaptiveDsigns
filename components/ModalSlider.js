@@ -18,7 +18,7 @@ export default function ModalSlider({
     return () => {
       setCurrentIndex(0);
     };
-  }, []);
+  });
 
   return (
     <>
