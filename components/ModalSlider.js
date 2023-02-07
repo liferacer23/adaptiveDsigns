@@ -7,17 +7,13 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import Image from "next/image";
 export default function ModalSlider({
   images,
-  setModal,
+  setModalState,
   currentIndex,
   setCurrentIndex,
 }) {
   const carouselRef = useRef(null);
-
   useEffect(() => {
     carouselRef.current.goTo(currentIndex);
-    return () => {
-      setCurrentIndex(0);
-    };
   });
 
   return (
@@ -36,7 +32,7 @@ export default function ModalSlider({
             style={{ fontSize: "2rem" }}
             className="inline-block ml-2 mb-5 text-3x cursor-pointer"
             color="#000"
-            onClick={() => setModal(false)}
+            onClick={() => setModalState(false)}
           />{" "}
         </div>
         <motion.div

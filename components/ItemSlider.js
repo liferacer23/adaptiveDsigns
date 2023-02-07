@@ -12,7 +12,7 @@ export default function ItemSlider({ images, description }) {
   const carouselRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [modal, setModal] = useState(false);
+  const [modalState, setModalState] = useState(false);
   var settings = {
     button: false,
     className: "center w-[100vw]",
@@ -61,10 +61,10 @@ export default function ItemSlider({ images, description }) {
   return (
     <>
       <AnimatePresence>
-        {modal && (
+        {modalState && (
           <ModalSlider
             images={images}
-            setModal={setModal}
+            setModalState={setModalState}
             currentIndex={currentIndex}
             setCurrentIndex={setCurrentIndex}
           />
@@ -97,7 +97,7 @@ export default function ItemSlider({ images, description }) {
                 images.map((image, index) => (
                   <div
                     onClick={() => {
-                      setModal(true), setCurrentIndex(index);
+                      setModalState(true), setCurrentIndex(index);
                     }}
                     key={index}
                     className="bg-white xs:h-[20rem] sm:h-[20rem] lg:h-[14rem] xl:h-[22rem] 2xl:h-[35rem] lg:w-[30rem] sm:w-[30rem] xs:w-[30rem] lg:mt-2 xs:mt-0 sm:mt-0  lg:px-5 xs:px-0 sm:px-0"

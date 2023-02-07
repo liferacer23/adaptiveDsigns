@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import quots from "../public/quots.svg";
-import AutoSlider from "./AutoSlider";
+import AutoSliderProdArch from "./AutoSliderProduct&Arch";
 export default function InteriorModal() {
   const product = [
     {
@@ -71,7 +71,8 @@ export default function InteriorModal() {
             </div>
           </div>
         </div>
-        <AutoSlider data={product} />
+
+        <AutoSliderProdArch data={product} />
       </div>{" "}
       <div>
         <div className="bg-secondary flex lg:flex-row sm:flex-col xs:flex-col lg:items-start xs:justify-start sm:justify-start lg:justify-between text-white pt-14 h-[fit-content] pb-4 lg:px-10">
@@ -101,7 +102,8 @@ export default function InteriorModal() {
             </div>
           </div>
         </div>
-        <AutoSlider data={furniture} />
+
+        <AutoSliderProdArch data={furniture} />
       </div>
     </>
   );
