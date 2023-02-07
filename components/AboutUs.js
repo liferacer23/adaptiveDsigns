@@ -24,7 +24,7 @@ export default function AboutUs() {
         <span className="text-[130px] text-white">03</span>
         <div className="h-16 flex flex-col w-full absolute bottom-0 bg-secondary">
           <span className="font-bold text-2xl">ABOUT US</span>
-          <span className="font-bold text-sm">WHAT WE DO</span>
+          <span className="font-bold text-sm">WHO WE ARE</span>
         </div>
       </div>
       <div className=" flex lg:flex-row sm:flex-col xs:flex-col lg:items-center xs:justify-center sm:justify-center lg:justify-between h-full">

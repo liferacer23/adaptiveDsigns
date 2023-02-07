@@ -62,7 +62,7 @@ export default function Clients() {
             <span className="text-[130px] ">05</span>
             <div className="h-16 w-full flex flex-col px-3 absolute bottom-2 bg-white">
               <span className="font-bold text-xl">CLIENTS</span>
-              <span className="font-bold text-sm">UPDATES</span>
+              <span className="font-bold text-sm">TESTIMONIALS</span>
             </div>
           </div>
           <div className="md:w-[30%] md:h-[30%] xs:h-[90%] sm:h-[90%]  xs:w-[100%] sm:w-[100%]">

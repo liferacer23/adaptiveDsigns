@@ -31,7 +31,7 @@ export default function Blog() {
           <span className="text-[130px] text-white">06</span>
           <div className="h-16 flex flex-col w-22 px-2 absolute bottom-0 bg-secondary">
             <span className="font-bold text-2xl">BLOG</span>
-            <span className="font-bold text-md">UPDATES</span>
+            <span className="font-bold text-md">NEWS</span>
           </div>
         </div>
         <div className="w-full h-full flex flex-wrap items-center justify-evenly gap-10 my-5">
