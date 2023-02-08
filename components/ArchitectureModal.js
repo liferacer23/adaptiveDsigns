@@ -16,6 +16,7 @@ export default function InteriorModal() {
         "/Portfolio/Architecture/HotelKal/4.webp",
         "/Portfolio/Architecture/HotelKal/5.webp",
         "/Portfolio/Architecture/Rec/2.webp",
+        "/Portfolio/Architecture/Rec/23.webp",
       ],
     },
   ];
