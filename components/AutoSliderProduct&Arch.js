@@ -97,48 +97,46 @@ export default function AutoSliderProdArch({ data }) {
         </Slider>
       </div>
 
-      {data.length > 3 && (
-        <>
-          <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 left-5">
-            <Button
-              style={{ border: "none" }}
-              icon={
-                <LeftOutlined
-                  style={{
-                    fontSize: "1.2rem",
-                    color: "#fff",
-                    background: "rgba(98, 98, 98, 0.5)",
-                    borderRadius: "50%",
-                    padding: "15px",
-                  }}
-                />
-              }
-              onClick={() => {
-                carouselRef.current.slickPrev();
-              }}
-            ></Button>
-          </div>
-          <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 right-5">
-            <Button
-              style={{ border: "none" }}
-              icon={
-                <RightOutlined
-                  style={{
-                    fontSize: "1.2rem",
-                    color: "#fff",
-                    background: "rgba(98, 98, 98, 0.5)",
-                    borderRadius: "50%",
-                    padding: "15px",
-                  }}
-                />
-              }
-              onClick={() => {
-                carouselRef.current.slickNext();
-              }}
-            ></Button>
-          </div>
-        </>
-      )}
+      <>
+        <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 left-5">
+          <Button
+            style={{ border: "none" }}
+            icon={
+              <LeftOutlined
+                style={{
+                  fontSize: "1.2rem",
+                  color: "#fff",
+                  background: "rgba(98, 98, 98, 0.5)",
+                  borderRadius: "50%",
+                  padding: "15px",
+                }}
+              />
+            }
+            onClick={() => {
+              carouselRef.current.slickPrev();
+            }}
+          ></Button>
+        </div>
+        <div className="hidden absolute h-full z-20 lg:flex w-fit items-center justify-between pl-5 pr-7 top-0 right-5">
+          <Button
+            style={{ border: "none" }}
+            icon={
+              <RightOutlined
+                style={{
+                  fontSize: "1.2rem",
+                  color: "#fff",
+                  background: "rgba(98, 98, 98, 0.5)",
+                  borderRadius: "50%",
+                  padding: "15px",
+                }}
+              />
+            }
+            onClick={() => {
+              carouselRef.current.slickNext();
+            }}
+          ></Button>
+        </div>
+      </>
     </div>
   );
 }
