@@ -26,7 +26,7 @@ export default function Home() {
         <meta
           name="description"
           content="
-          We are the best Interior design company in Addis Ababa, Ethiopia, We work on different things like interior design, Architectural Design, Turnkey, Product.
+          We are the best Interior design company in Addis Ababa, Ethiopia, We work on different things like interior design, Architectural Design, Turnkey.
           "
         />
         <link rel="icon" href="/favicon.ico" />
